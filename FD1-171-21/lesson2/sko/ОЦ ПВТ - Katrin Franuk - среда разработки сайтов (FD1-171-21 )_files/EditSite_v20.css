@@ -1,0 +1,124 @@
+.SEditSite_Block
+{
+  border: solid #808080 1px;
+  padding: 3px 0 6px 6px;
+  background-color: #FFFFD0;
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 0;
+}
+
+.SEditSite_Block h1
+{
+  margin: 0 0 1px 0;
+  font-size: 12px;
+}
+
+.SEditSite_Row
+{
+  padding-top: 3px;
+}
+
+.SEditSite_Row select
+{
+  font-size: 12px;
+  margin-right: 3px;
+}
+
+.SEditSite_Row input
+{
+  font-size: 12px;
+  margin-right: 3px;
+  margin-top: 1px;
+  margin-bottom: 2px;
+}
+
+.SEditSite_Row table td
+{
+  vertical-align: middle;
+  padding-right: 3px;
+}
+
+.SShowTreeFolder
+{
+  font-family: Arial;
+  font-size: 12px;
+  padding-right: 5px;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.SShowTreeFolderSelected
+{
+  font-family: Arial;
+  font-size: 12px;
+  padding-right: 5px;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  background-color: #DCEFF8;
+  cursor: pointer;
+  /*text-align: center;*/
+}
+
+.SShowTreeButton
+{
+  width: 110px;
+  height: 20px;
+  font-family: Verdana;
+  font-size: 8pt;
+  margin-right: 3px;
+  margin-bottom: 5px;
+  padding-bottom: 1px;
+}
+
+.SShowTreeDroppedDownControlTable
+{
+  font-size: 100%;
+  table-layout: fixed;
+  margin-right: 7px;
+}
+
+.SShowTreeDroppedDownOverContainerDiv
+{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  visibility: hidden;
+  border: solid rgb(127,157,185) 1px;
+  overflow: auto;
+  background-color: rgb(255,255,255);
+  z-index: 1;
+}
+
+.SShowTreeDroppedDownTreeContainerDiv
+{
+  padding: 5px 10px 5px 10px;
+  width: 50px;
+}
+
+.SShowTreeDroppedDownTableContainerDiv
+{
+  padding: 2px 0px 2px 0px;
+  width: 50px;
+}
+
+.SCropToolsTable
+{
+  margin: 3px 0 3px 30px;
+}
+
+.SCropToolsTable input
+{
+  font-size: 14px;
+  margin: 0;
+  width: 28px;
+  height: 28px;
+}
+
+.SCropToolsTable input.H
+{
+  padding-left: 4px;
+}

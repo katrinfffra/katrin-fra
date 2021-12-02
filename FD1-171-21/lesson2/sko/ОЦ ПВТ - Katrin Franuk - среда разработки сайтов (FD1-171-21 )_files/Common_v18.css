@@ -1,0 +1,135 @@
+html, body
+{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+a
+{
+  /* color: rgb(78,174,59); */
+  color: rgb(45,130,30);
+  text-decoration: underline;
+}
+
+ul, ol
+{
+  padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+ul ul, ol ol, ul ol, ol ul
+{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+ul li
+{
+  padding-top: 3px;
+  padding-bottom: 3px;
+  list-style-type: disc;
+}
+
+ol li
+{
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+ul ul li
+{
+  padding-bottom: 0;
+  margin-bottom: 0;
+  list-style-type: circle;
+}
+
+p
+{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+form
+{
+  display: inline;
+}
+
+table
+{
+  font-size: 100%;
+  border-collapse: collapse;
+}
+
+td, th
+{
+  padding: 0px;
+  font-weight: normal;
+  vertical-align: top;
+}
+
+h1
+{
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+h2
+{
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+h3
+{
+}
+
+h4
+{
+}
+
+select
+{
+  font-size: 11px;
+  font-family: Arial;
+}
+
+select optgroup
+{
+  background-color: rgb(255,255,255);
+  color: rgb(0,0,0);
+}
+
+input
+{
+  font-family: Arial;
+}
+
+textarea
+{
+  font-family: Arial;
+  font-size: 13px;
+}
+
+td.L
+{
+  text-align: left;
+}
+
+td.C
+{
+  text-align: center;
+}
+
+td.R
+{
+  text-align: right;
+}
+
+td.NW
+{
+  white-space: nowrap;
+}
