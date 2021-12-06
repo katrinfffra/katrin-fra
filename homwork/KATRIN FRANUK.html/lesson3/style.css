@@ -1,0 +1,21 @@
+html{
+    font-size: 20px;
+}
+body{
+    background-color: rgb(186, 238, 162);
+   }
+h1{
+    font-style: italic;
+}
+h2{
+    font-style: italic;
+}
+p {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 24px;
+    line-height: 25px;
+    font-variant: normal;
+    font-weight: 900;
+    font-style: italic;
+    
+}
