@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Парный устаревший тег font в HTML</title>
+    <style>
+        span {
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: rgb(94, 9, 72);text-align: center;">Парный тег font как он работает?</h1>
+    <div style="text-align: center;font-size: 29px;">
+
+        Цвет шрифта на сайте можно задать при помощи <span>HTML-кода</span>. Для этого существует тег font. По
+        определению, тег <span>font</span> служит некой «обёрткой» или «контейнером» для текста, управляя свойствами
+        которого можно изменять оформление текста.
+
+    </div>
+    <h2 style="color: chocolate; text-decoration: underline;text-align: center;">Атрибуты тега FONT
+        Тег font имеет всего три атрибута:</h2>
+    <ul style="list-style-type: square;color: chocolate;font-size: 29px;">
+        <li>color – задает цвет текста;</li>
+        <li>size – устанавливает размер текста;</li>
+        <li>face – задает семейство шрифтов.</li>
+    </ul>
+
+    <h2 style="color: rgb(70, 235, 70);font-weight: 900;text-decoration: underline;text-align: center;">В HTML считает,
+        что «#Candy и BruceWillis» — это цвет!!!</h2>
+
+    <div style="border:solid rgba(59, 10, 83, 0.658) 3px;font-size: 33px;background-color: fuchsia;">
+        Почему цвета <span style="color: rgb(190, 20, 20);">Candy</span> и <span
+            style="color: rgb(46, 231, 46);">BruceWillis</span> отображаются именно
+        в таком виде?
+    </div>
+    <div style="border:solid rgba(80, 9, 80, 0.603)  3px;font-size: 33px;background-color: fuchsia;margin-top: 46px;">
+        Весь фокус состоит в том, как считывается HEX-код. Все сиволы, которые не являются символами шеснадцатиричной
+        системы исчисления заменяются на нуль, далее весь код дополняется нулями до числа, кратного трём,затем делится
+        на три части, и отбрасывваются аргументы таким образом, чтобы от каждой из трёх частей остались только два перых
+        символа. Из трёх образовавшихся пар символов и cкладывается код получаемого цвета. Объяснение данного
+        преобразования было взято с сайта <a href="http://habr.com" title="harb" target="-balank">habr.com</a>.
+    </div>
+
+</body>
+
+</html>
