@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CHESS</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            padding: 20px;
+
+        }
+
+        .green {
+            background-color: aquamarine;
+            padding: 3px;
+            font-size: 3px;
+        }
+
+        tr:nth-child(odd) td:nth-child(even) {
+            background-color: black;
+        }
+
+        tr:nth-child(even) td:nth-child(odd) {
+            background-color: black;
+        }
+
+
+
+
+
+
+        #grn {
+            background-color: aquamarine;
+            font-size: 3px;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>border</h3>
+    <table border="1px">
+
+        <tr id="grn" style="font-size: 2px; padding: 3px;">
+            <td class="green">1</td>
+            <td style="background: aquamarine;">2</td>
+            <td>3</td>
+            <td style="background:aquamarine;">4</td>
+            <td>5</td>
+            <td style="background:aquamarine;">6</td>
+            <td>7</td>
+            <td style="background:aquamarine;">8</td>
+            <td>9</td>
+            <td style="background:aquamarine;">1</td>
+        </tr>
+        <tr>
+            <td class="green" style="background: aquamarine;font-size: 2px;padding-left: 3px;padding-right: 3px;">
+                1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td class="green" style="background:aquamarine;font-size: 2px;padding-left: 3px;padding-right: 3px;">1</td>
+        </tr>
+        <tr class="green">
+            <td style="background:aquamarine;font-size: 2px;padding-left: 3px;padding-right: 3px;">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td style="background:aquamarine;font-size: 2px;padding-left: 3px;padding-right: 3px;">1</td>
+        </tr>
+        <tr>
+            <td class="green" style="background:aquamarine;font-size: 2px;padding-left: 3px;padding-right: 3px;">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td class="green" style="background:aquamarine;font-size: 2px;padding-left: 3px;padding-right: 3px;">1</td>
+        </tr>
+        <tr class="green">
+            <td style="background:aquamarine;font-size: 2px;padding-left: 3px;padding-right: 3px;">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td style="background:aquamarine;font-size: 2px;padding-left: 3px;padding-right: 3px;">1</td>
+        </tr>
+        <tr class="green">
+            <td style="background:aquamarine;font-size: 2px;padding-left: 3px;padding-right: 3px;">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td style="background:aquamarine;font-size: 2px;padding-left: 3px;padding-right: 3px;">1</td>
+        </tr>
+        <tr class="green">
+            <td style="background:aquamarine;font-size: 2px;padding-left: 3px;padding-right: 3px;">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td style="background:aquamarine;font-size: 2px;padding-left: 3px;padding-right: 3px;">1</td>
+        </tr>
+        <tr class="green">
+            <td style="background:aquamarine;font-size: 2px;padding-left: 3px;padding-right: 3px;">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td style="background:aquamarine;font-size: 2px;padding-left: 3px;padding-right: 3px;">1</td>
+        </tr>
+        <tr class="green">
+            <td style="background:aquamarine;font-size: 2px;padding-left: 3px;padding-right: 3px;">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td style="background:aquamarine;font-size: 2px;padding-left: 3px;padding-right: 3px;">1</td>
+        </tr>
+        <tr id="grn" style="font-size: 2px; padding: 3px;">
+            <td style="background:aquamarine;">1</td>
+            <td>2</td>
+            <td style="background:aquamarine;">3</td>
+            <td>4</td>
+            <td style="background:aquamarine;">5</td>
+            <td>6</td>
+            <td style="background:aquamarine;">7</td>
+            <td>8</td>
+            <td style="background:aquamarine;">9</td>
+            <td>1</td>
+        </tr>
+    </table>
+</body>
+
+</html>
