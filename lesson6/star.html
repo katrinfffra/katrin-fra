@@ -7,23 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star</title>
     <style>
-        .im {
-            background: url('star0.png') no-repeat;
+        .clearfix:after {
+            content: ".";
+            visibility: hidden;
+            display: block;
+            height: 0;
+            clear: both
         }
 
-        .im:hover {
-            background: url('star1.png') no-repeat;
+        img {
+            background: url('star0.png');
+            background-position: right top;
         }
 
-        h1 {
-            text-align: center;
+        div.clearfix div.star::before {
+            content: url('star0.png');
+        }
+
+        .star:hover {
+            background: url('star1.png');
         }
     </style>
 </head>
 
 <body>
-    <div class="im" style="background: url('star0.png') ;">
-        <h1>Star</h1>
+    <div style="border: solid black  3px;" class="clearfix">
+
+        <div class="star">
+
+        </div>
 
     </div>
 
