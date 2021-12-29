@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -7,41 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star</title>
     <style>
-        .clearfix:after {
-            content: ".";
-            visibility: hidden;
-            display: block;
-            height: 0;
-            clear: both
+        .stars {
+            float: left;
         }
 
-        img {
-            background: url('star0.png');
-            background-position: right top;
-            background-repeat: no-repeat;
-        }
-
-        div.star:before {
-            content: url('star0.png');
+        .star {
+            width: 50px;
+            height: 50px;
+            border: 3px solid black;
             float: right;
         }
 
-
-        div:hover {
-            background: url('star1.png');
+        .star:hover,
+        .star:hover~div {
+            background-color: coral;
         }
     </style>
+
 </head>
 
 <body>
-    <div style="border: solid black  3px;" class="clearfix">
-
-        <div class="star">
-
-        </div>
-
+    <div class="stars">
+        <div class="star">1</div>
+        <div class="star">2</div>
+        <div class="star">3</div>
+        <div class="star">4</div>
+        <div class="star">5</div>
     </div>
-
 
 </body>
 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarsTWO</title>
+</head>
+<style>
+    .stars {
+        float: left;
+    }
+
+    .star {
+        width: 100px;
+        height: 100px;
+        background: url('star0.png') no-repeat;
+        float: right;
+    }
+
+    .star:hover,
+    .star:hover~div {
+        background: url('star1.png') no-repeat;
+    }
+
+    @media all and (max-width:516px) {
+        .stars {
+            float: left;
+        }
+
+        .star {
+            width: 50px;
+            height: 50px;
+            background: url('star0.png') no-repeat;
+            float: right;
+        }
+
+        .star:hover,
+        .star:hover~div {
+            background-color: rgb(20, 220, 220);
+        }
+    }
+</style>
+
+<body>
+
+    <div class="stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+</body>
+
+</html>

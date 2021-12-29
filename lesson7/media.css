@@ -1,0 +1,23 @@
+@import "style.css";
+@media all and (max-width:579px) {
+    .menu {
+        height: 200px;
+        float: right;
+        background-color: greenyellow;
+    }
+
+    .banner {
+        height: 200px;
+        float: left;
+        background-color: rgb(48, 128, 182);
+    }
+}
+
+@media all and (max-width:567px) {
+
+    .menu,
+    .banner {
+        width: 100%;
+        float: none;
+    }
+}
