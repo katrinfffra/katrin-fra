@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conteiner{
+    width: 1200px;
+    margin: 0 auto;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* heider */
+.heider-top{
+    background-color: #E1E1E1;
+    height: 80px;
+    
+
+}
+.heider-top.conteiner{
+    
+}
+.shop span{
+
+float: left;
+}
+.shop span:first-child{
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #000000;
+    width: 129px;
+    height: 40px;
+    margin-left: 80px;
+    margin-top: 19px;
+    margin-right: 36px;
+}
+.shop span:last-child{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    margin-top: 23px;
+    margin-left: 10px;
+}
+.search{
+    position: absolute;
+    width: 368px;
+    height: 44px;
+    left: 580px;
+    top: 18px;
+
+    background: #FFFFFF;
+    border-radius: 63px;
+    float: left;
+    margin-left: 196px;
+}
+.search span{
+    width: 151px;
+    height: 22px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 121.4%;
+    color: rgba(74, 70, 70, 0.5);
+    vertical-align: -11px;
+    padding-left: 24px;
+    
+}
+.heider-top-right{
+    float: right;
+    margin-top: 30px;
+    margin-right: 62px;
+}
+.heider-top-right li{
+    float: left;
+    margin-right: 16px;
+}
+.heider-top-right li a{
+    font-family:'Open Sans', sans-serif; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+  .elips{
+    width: 17px;
+    height: 17px;
+    float: right;
+    margin-right: -252px;
+    margin-top: 24px;
+}
