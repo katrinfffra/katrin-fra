@@ -1,0 +1,19 @@
+﻿var Str="";
+
+Str+="<div class='SExampleHeader'>";
+Str+="Стилевой селектор <b>*</b> &mdash; соответствует всем элементам.";
+Str+="</div>";
+
+var Example=
+  "<style>$$$"+
+  "  %(.S638 )%* { color: red }$$$"+
+  "</style>$$$"+
+  "%(<div class='S638'>)%"+
+  "<p><span>Королева</span> может жить до 20 лет, рабочие особи живут от 1 до 3 лет.</p>$$$"+
+  "<div>Муравьиные <span>королевы</span> живут в 100 раз дольше, чем большинство одиночных насекомых аналогичного размера.</div>$$$"+
+  "%(</div>)%"+
+  "";
+Str+=ComposeExamples([{code:Example}],{leftcolperc:58,leftfontsize:13});
+
+
+document.write(Str);

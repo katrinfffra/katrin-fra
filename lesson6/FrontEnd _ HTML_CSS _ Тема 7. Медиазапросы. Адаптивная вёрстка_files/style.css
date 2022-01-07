@@ -1,0 +1,383 @@
+@import url('print.css');
+
+html, body
+{
+  font-family: Arial;
+  font-size: 3mm;
+  padding: 0;
+}
+
+body
+{
+  margin: 0 0 0 5mm;
+}
+
+.SPage
+{
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.SPageHTML
+{
+  width: 165mm;
+  height: 259mm;
+  margin-top: 5mm;
+}
+
+.SPage p
+{
+  font-size: 4mm;
+}
+
+.SPage td, .SPage th
+{
+  font-size: 4mm;
+}
+
+.SPage td.C
+{
+  text-align: center;
+}
+
+table
+{
+  border-collapse: collapse;
+}
+
+td, th
+{
+  border: solid #000000 1px;
+  padding: 0 1mm 0 1mm;
+}
+
+table.SNoBorders td, table.SNoBorders th
+{
+  border-style: none !important;
+}
+
+td.SNoBorders, th.SNoBorders
+{
+  border-style: none !important;
+}
+
+.STableCSS td
+{
+  font-size: 2.7mm;
+}
+
+.STableCSS th
+{
+  font-size: 11px;
+}
+
+.SMnemonicsTable td.SBlank
+{
+  border-style: none solid none solid;
+  min-width: 10px;
+}
+
+.SMnemonicsTable td
+{
+  font-size: 13px;
+}
+
+.SMnemonicsTable th
+{
+  font-size: 13px;
+}
+
+.SColorsTable td
+{
+  text-align: center;
+  padding: 0.5mm 1px 1mm 1px;
+  font-size: 10px;
+}
+
+.SColorsTable td span
+{
+  font-size: 10px;
+}
+
+.SColorsTable td.SBlank
+{
+  border-style: none;
+}
+
+.SColorGamutTable td
+{
+  border-style: none;
+}
+
+.SExampleHeader
+{
+  margin-top: 3mm;
+  font-size: 4mm;
+}
+
+.SExampleDescription
+{
+  font-size: 4mm;
+  font-style: italic;
+  margin-top: 1mm;
+}
+
+.SExampleHeader ul 
+{
+  margin: 1px;
+}
+
+.SExamplesTable
+{
+  margin-top: 4mm;
+  margin-bottom: 4mm;
+  font-size: 4mm;
+  width: 100%;
+}
+
+.SExamplesTable th
+{
+  font-weight: normal;
+  background-color: #D0D0D0;
+  padding: 0.5mm;
+}
+
+.SExamplesTable td
+{
+  vertical-align: top;
+  padding: 1.5mm;
+}
+
+.SExamplesTable td p
+{
+  margin-top: 1.5mm;
+  margin-bottom: 2mm;
+}
+
+.SExamplesTable td.SCode
+{
+  background-color: #F0F0F0;
+}
+
+.SExamplesTable td h1
+{
+  font-size: 8mm;
+  margin: 3mm 0 3mm 0;
+}
+
+.SExamplesTable td h2
+{
+  font-size: 6.5mm;
+  margin: 3mm 0 3mm 0;
+}
+
+.SExamplesTable td h3
+{
+  font-size: 5.5mm;
+  margin: 3mm 0 3mm 0;
+}
+
+.SExamplesTable td h4
+{
+  font-size: 5mm;
+  margin: 3mm 0 3mm 0;
+}
+
+.SExamplesTable td h5
+{
+  font-size: 4.5mm;
+  margin: 3mm 0 3mm 0;
+}
+
+.SExamplesTable td h6
+{
+  font-size: 4mm;
+  margin: 3mm 0 3mm 0;
+}
+
+.SExamplesTable a, .SExamplesTable a:visited
+{
+  color: #0000FF;
+}
+
+.SExamplesTable td table
+{
+  border-collapse: separate;
+}
+
+.SExamplesTable td table th
+{
+  background-color: transparent;
+  border: solid #000000 1px;
+  font-weight: bold;
+}
+
+.SExamplesTable td table td
+{
+  background-color: transparent;
+  border: solid #000000 1px;
+}
+
+.SFontFormatsTable td
+{
+  text-align: center;
+}
+
+.SPaddingsTable td
+{
+  border-style: none;
+  text-align: center;
+}
+
+.Footer
+{
+  position: absolute;
+  top: 24.5cm;
+  left: 0;
+  width: 100%;
+  opacity: 0.4;
+}
+
+.Footer table td
+{
+  border-style: none;
+  color: #A0A0A0;
+  font-size: 13px;
+}
+
+.Footer table td.T
+{
+  border-bottom: solid #A0A0A0 1px;
+  padding-bottom: 2mm;
+  font-size: 11px;
+}
+
+.Footer table td.B
+{
+  padding-top: 2mm;
+  font-size: 11px;
+}
+
+
+.STableComment
+{
+  font-size: 4mm;
+  margin: 4mm 0 2mm 0;
+}
+
+table.SFont12 td, table.SFont12 th, div.SFont12
+{
+  font-size: 12px;
+}
+
+table.SFont13 td, table.SFont13 th, div.SFont13
+{
+  font-size: 13px;
+}
+
+.SLessonPage
+{
+  position: absolute;
+  right: 5mm;
+  top: 8cm;
+  padding: 2.5cm 1cm 1.5cm 1cm;
+  background-color: #E0E0E0;
+  text-align: center;
+  font-size: 25px;
+  line-height: 150%;
+  font-family: serif;
+}
+
+.SContent1, .SContent2
+{
+  width: 100%;
+}
+
+.SContent1 td, .SContent2 td
+{
+  border-style: none;
+}
+
+/* .T - text, .B - blank, .P - pagenum */
+
+.SContent1 td.T, .SContent1 td.P
+{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.SPageHTML .SContent1 td.T
+{
+  white-space: nowrap;
+  padding: 5px 0 2px 0;
+  padding-right: 3px;
+}
+
+.SContent1 td.P
+{
+  padding-bottom: 2px;
+  padding-top: 5px;
+}
+
+.SContent2 td.T, .SContent2 td.P
+{
+  font-size: 13.5px;
+}
+
+.SContent2 td.T
+{
+  white-space: nowrap;
+}
+
+.SPageHTML .SContent2 td.T
+{
+  padding: 0 2px 1px 0;
+}
+
+.SContent1 td.P, .SContent2 td.P
+{
+  text-align: right;
+}
+
+.SPageHTML .SContent1 td.B
+{
+  background: url('images/cont.gif') right 18px repeat-x;
+  width: 100%;
+}
+
+.SPageHTML .SContent2 td.B
+{
+  background: url('images/cont.gif') right 10px repeat-x;
+  width: 100%;
+}
+
+.SThemeName
+{
+  font-size: 16pt;
+  padding: 0 0 10px 0;
+}
+
+.SParaName
+{
+  font-size: 14pt;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 5px;
+}
+
+.STotalContents a
+{
+  text-decoration: none;
+  color: #000000;
+}
+
+.SFont13 .SExampleHeader
+{
+  font-size: 13px;
+}
+
+.SFont13 .SExampleDescription
+{
+  font-size: 13px;
+}

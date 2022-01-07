@@ -1,0 +1,73 @@
+﻿var Str="";
+
+
+Str+="<div class='SExampleHeader'>";
+Str+="При вёрстке макетов часто требуется, чтобы размер контейнера включал в себя размеры всех дочерних элементов, в том числе плавающих. Обычно же размер контейнера НЕ включает в себя размеры плавающих дочерних элементы.";
+Str+="</div>";
+
+var Example1=
+  "<style>$$$"+
+  "  %(.S657a )%.s-inner { float: left; width: 80px; height: 80px; background: yellow }$$$"+
+  "</style>$$$"+
+  "%(<div class='S657a'>)%"+
+  "<div style='border: solid red 1px'>$$$"+
+  "  <div class=s-inner></div>$$$"+
+  "</div>$$$"+
+  "%(</div>)%"+
+  "";
+Str+=ComposeExamples([{code:Example1}],{leftcolperc:70,leftfontsize:13,autoquoteattrs:true});
+
+Str+="<div class='SExampleHeader'>";
+Str+="Проблема может быть решена выставлением стилевого свойства overflow:hidden или overflow:auto у контейнера, либо же можно сделать сам контейнер плавающим через float:left или float:right. Однако, эти способы неуниверсальны &mdash; эти стилевые свойства могут повлиять на поведение контейнера. Более универсальный способ, который мы тоже уже знаем &mdash; добавление в контейнер тега со стилевым свойством clear:both.";
+Str+="</div>";
+
+var Example2=
+  "<style>$$$"+
+  "  %(.S657b )%.s-inner { float: left; width: 80px; height: 80px; background: yellow }$$$"+
+  "</style>$$$"+
+  "%(<div class='S657b'>)%"+
+  "<div style='border: solid red 1px'>$$$"+
+  "  <div class=s-inner></div>$$$"+
+  "  <div style='clear:both'></div>$$$"+
+  "</div>$$$"+
+  "%(</div>)%"+
+  "";
+Str+=ComposeExamples([{code:Example2}],{leftcolperc:70,leftfontsize:13,autoquoteattrs:true});
+
+Str+="<div class='SExampleHeader'>";
+Str+="Недостаток такого способа, в приведённом виде &mdash; <b>семантический</b>: мы добавили HTML-тег, который НЕ имеет отображаемого смысла, НЕ задаёт ни содержание, ни&nbsp;логическую разметку, т.е. служебный, технический.<br>С помощью селектора псевдоэлемента :after можно сделать код семантичнее:";
+Str+="</div>";
+
+var Example3=
+  "<style>$$$"+
+  "  %(.S657c )%.s-inner { float: left; width: 80px; height: 80px; background: yellow }$$$"+
+  "  %(.S657c )%.clearfix:after { content: \"\"; display: block; clear: both }$$$"+
+  "</style>$$$"+
+  "%(<div class='S657c'>)%"+
+  "<div style='border: solid red 1px' class=clearfix>$$$"+
+  "  <div class=s-inner></div>$$$"+
+  "</div>$$$"+
+  "%(</div>)%"+
+  "";
+Str+=ComposeExamples([{code:Example3}],{leftcolperc:70,leftfontsize:13,autoquoteattrs:true});
+
+Str+="<div class='SExampleHeader'>";
+Str+="Или, кроссбраузерный вариант:";
+Str+="</div>";
+
+var Example4=
+  "<style>$$$"+
+  "  %(.S657d )%.s-inner { float: left; width: 80px; height: 80px; background: yellow }$$$"+
+  "  %(.S657d )%.clearfix:after { content: \".\"; visibility: hidden; display: block;$$$"+
+  "    height: 0; clear: both }$$$"+
+  "</style>$$$"+
+  "%(<div class='S657d'>)%"+
+  "<div style='border: solid red 1px' class=clearfix>$$$"+
+  "  <div class=s-inner></div>$$$"+
+  "</div>$$$"+
+  "%(</div>)%"+
+  "";
+Str+=ComposeExamples([{code:Example4}],{leftcolperc:70,leftfontsize:13,autoquoteattrs:true});
+
+
+document.write(Str);

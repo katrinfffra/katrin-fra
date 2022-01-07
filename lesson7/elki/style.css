@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conteiner{
+    width: 1140px;
+    margin: 0 auto;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.clearfix::after{
+content: "";
+display: block;
+clear: both;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* heider */
+.heider{
+
+
+
+}
+.heider-top{
+
+
+}
+.heider-top {
+
+
+}
+.heider-top ul.heider-top-menu{
+   padding-top: 26px;
+}
+.heider-top ul.heider-top-menu li{
+    float: left;
+    margin-right: 26px;
+}
+.heider-top ul.heider-top-menu li a {
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+}
+ul.heider-top-icon{
+    float: right;
+   
+}
+ul.heider-top-icon  li {
+    float:left;
+    margin-right: 24px;
+ 
+}
+ul.heider-top-icon  li:nth-child(3){
+    margin-right: 45px;
+}
+ul.heider-top-icon  li:last-child img{
+    margin-right: 8px;
+}
+ul.heider-top-icon  li:last-child span{
+    vertical-align: 9px;
+}
+.phone span{
+    vertical-align: 8px;
+}
+.phone {
+    float: left;
+    margin-left: 57px;
+}
+/* heider-search */
+.heider-search{
+float: left;
+}
+.heider-search img[alt="humb"]{
+    float: left;
+    margin-top: 65px;
+    margin-right: 46px;
+}
+.heider-search img[alt="Logo"]{
+    float: left;
+    margin-top: 36px;
+    margin-right: 45px;
+}
+.heider-search div.seach { 
+    float: left;
+    background: #F9F9F9;
+    border-radius: 8px;
+    width: 702.54px;
+    height: 52px;
+    margin-top: 51px;
+    margin-left: 9px;
+}
+.heider-search div.seach img[alt="search"]{
+    margin-left: 12px;
+    margin-top: 13px;
+}
+.heider-search div.seach span{
+    font-family:'Roboto', sans-serif; ;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    vertical-align: 10px;
+    margin-left: 16px;
+}
+.heider-search button{
+    float: right;
+    background: #81B43F;
+    border-radius: 8px;
+    width: 156px;
+    height: 52px; 
+    margin-top: 47px;
+    margin-left: 25px;
+    border: none;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+   line-height: 22px;
+    color : #FFFFFF; }  
+.heider-search button:first-child{
+display: inline-block;
+height: 28px;
+border-right: 1px solid #ffffff;
+padding-right: 14px;
+}
+.heider-search button:last-child{
+    margin-left: 14px;
+}
+.heider-bottom-menu {
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+.heider-bottom-menu li{
+float: left;
+margin-top: 24px;
+margin-left: 24px;
+
+}
+.heider-bottom-menu li:first-child{
+  margin-left:248px;
+}
+.heider-bottom-menu li:last-child{
+    margin-right: 174px;
+}
+.heider-bottom-menu li.activ a{
+  
+color:#FF715B;
+    
+}
+.elkasale{
+    height: 381px;
+    background: url('img/elkasale.jpg') no-repeat center;
+    background-size: cover;
+    margin-top: 37px;
+}
+.sale-red-block{
+    width: 511px;
+    height: 226px;
+    background: #FF715B;  
+    margin-top: 80px;
+    float: right; 
+}
+.sale-red-block h1{
+    font-family: 'Noto Sans', sans-serif; 
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 46px;
+}
+.sale-red-block h1 span:first-child{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    display: block;
+
+}
+.sale-red-block h1 span:nth-child(2){
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 60px;
+    display: block;
+}
+.sale-red-block h1 span:last-child{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    display: block;
+}
+/* filters */
+.filters-wrap{
+    
+    color: #000000;
+}
+.conteiners{
+    
+    
+}
+.filter{
+    width: 272px;
+    height: 96px;
+    float: left;
+    border-left:  1px solid #F5F5F5;
+    border-right:  1px solid #F5F5F5;
+    font-family:'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
+.filter{
+    margin-left:0px;
+    margin-right: 46px;
+}
+.filter img{
+    margin-left:46px;
+    margin-top: 30px;
+}
+.filter span{
+    vertical-align: 7px;
+}
+.filters-wrap ul{
+    margin-left: 46px;
+}
+.filters-wrap ul li{   
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    float: left;
+    margin-right: 24px;
+    margin-top: 30px;
+ 
+}
+/* catalog */
+.catalog{
+    background: #F9F9F;
+}
+.catalog.conteiner{
+
+padding-top:66px;
+}
+.catalog-breadcrumbs{
+    float: left;
+}
+.catalog-sort{
+    float: right;
+}
+
+.catalog-breadcrumbs ul li{
+    float: left;
+}
+
+.catalog. ul li a{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.5);    
+}
+.catalog. ul li img{
+    margin-top: 4px;
+    margin-right: 4px;
+    vertical-align: -3px;
+}
+.catalog-breadcrumbs h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    color: #000000;
+}
+.catalog-breadcrumbs h2 span{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 19px;
+}
+.catalog-sort {
+    padding-bottom: 10px;
+}
+.catalog-sort ul li{
+    float: left;
+}
+.catalog-sort ul li {
+    margin-right: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.catalog-sort ul li:first-child{
+    margin-right: 12px;
+    color: #000000;
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+}
+.catalog-sort img{
+    float: right;
+    padding-top: 16px;
+    margin-left: 16px;
+}  
+.catalog-item{
+    width:272px ;
+    height:387px ;
+    background: #ffffff;
+    border-radius: 8px;
+    background: url('img/heard2.png') right 20px top 20px no-repeat #ffffff;
+    padding-top: 36px;
+    padding-left:25px;
+    padding-right:25px;
+    float: left;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 28px;
+    
+}
+.catalog-item{
+    margin-left: -8px; 
+    margin-right:-8px ;
+}
+.catalog-item img{
+    text-align: center;
+    width: 100%;
+}
+.stars span{
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+}
+.stars span:not(.emty):not(.text){
+    background: url("img/star.jpg") no-repeat;
+}
+.stars span.emty{
+    opacity: 0,3;
+    background: url("img/star.jpg") no-repeat;
+}
+.stars span.text{
+    font-size: 10px;
+    line-height: 160%;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 7px;
+}
+.stars h5{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 160%;
+    color: #000000;
+}
+.stars h4{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+.stars p{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 160%;
+    color: rgba(0, 0, 0, 0.5);
+}
+.christmas-toys .conteiner{
+    height: 209px;
+    background-size: cover;
+}
+.christmas-toys h2{
+    margin-top: -169px;
+    margin-left: 136px;
+    font-family:'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    color: #000000;
+}
+.christmas-toys button{
+    font-family:'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    width: 208px;
+    height:43px;
+    color: #000000;
+    text-align: center;
+    border-radius: 8px;
+    margin-left: 134px;
+    margin-top: 32px;     
+    padding: 14px;
+    text-align: center;
+    width: 208px
+    padding: 14px;
+}

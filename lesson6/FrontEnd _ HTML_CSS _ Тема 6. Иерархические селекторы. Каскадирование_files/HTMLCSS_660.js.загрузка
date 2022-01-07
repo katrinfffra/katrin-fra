@@ -1,0 +1,46 @@
+﻿var Str="";
+
+Str+="<div class='SExampleHeader'>";
+Str+="Можно несколько селекторов перечислить через запятую, тогда указанное стилевое оформление будет применено к тегам, подходящим под любой из перечисленных селекторов.";
+Str+="</div>";
+
+var Example1=
+  "<style>$$$"+
+  "  %(.S660a )%a[href^='http://'], %(.S660a )%a[href^='https://']$$$"+
+  "  {$$$"+
+  "    color: red;$$$"+
+  "  }$$$"+
+  "  %(.S660a )%a:not([href^='http://']):not([href^='https://'])$$$"+
+  "  {$$$"+
+  "    color: green;$$$"+
+  "  }$$$"+
+  "</style>$$$"+
+  "%(<div class='S660a'>)%"+
+  "Эта <a href='http://www.tut.by'>ссылка</a> абсолютная,<br>$$$"+
+  "и эта <a href='https://www.tut.by'>ссылка</a> тоже,<br>$$$"+
+  "а вот эта <a href='Examples/sml.gif'>ссылка</a> относительная."+
+  "%(</div>)%"+
+  "";
+var Example2=
+  "<style>$$$"+
+  "  %(.S660b )%a[href*='//']$$$"+
+  "  {$$$"+
+  "    color: red;$$$"+
+  "  }$$$"+
+  "  %(.S660b )%a:not([href*='//'])$$$"+
+  "  {$$$"+
+  "    color: green;$$$"+
+  "  }$$$"+
+  "</style>$$$"+
+  "%(<div class='S660b'>)%"+
+  "Эта <a href='http://www.tut.by'>ссылка</a> абсолютная,<br>$$$"+
+  "и эта <a href='https://www.tut.by'>ссылка</a> тоже,<br>$$$"+
+  "и эта <a href='//www.tut.by'>ссылка</a> абсолютная,<br>$$$"+
+  "а вот эта <a href='Examples/sml.gif'>ссылка</a> относительная."+
+  "%(</div>)%"+
+  "";
+Str+=ComposeExamples([{code:Example1},{code:Example2}],{leftfontsize:13,leftcolperc:67,autoquoteattrs:true});
+
+
+
+document.write(Str);

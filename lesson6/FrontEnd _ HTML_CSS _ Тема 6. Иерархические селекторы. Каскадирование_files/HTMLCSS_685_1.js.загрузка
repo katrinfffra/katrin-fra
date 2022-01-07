@@ -1,0 +1,28 @@
+﻿var Str="";
+
+Str+="<div class='SExampleHeader' style='margin-bottom: -5px'>";
+Str+="Стилевое свойство <b>visibility</b> &mdash; видимость элемента.";
+Str+="</div>";
+
+Str+="<div class='SExampleHeader'>";
+Str+="Возможные значения:";
+Str+="<br><b>visibility: visible</b> &mdash; видимый элемент (как обычно).";
+Str+="<br><b>visibility: hidden</b> &mdash; элемент и всё его содержимое невидимы, при этом они <b>занимают положенное им место на веб-странице</b>, в отличие от <b>display: none</b>.";
+Str+="<br>Есть также ещё значения <b>collapse</b>, <b>empty-cells</b>.";
+Str+="</div>";
+
+var Example1='<span>Ничего не вижу.</span>$$$<span style="visibility: visible">$$$  Ничего не слышу.$$$</span>$$$<span>Никому ничего не скажу.</span>';
+var Example2='<span>Ничего не вижу.</span>$$$<span style="visibility: hidden">$$$  Ничего не слышу.</span>$$$<span>Никому ничего не скажу.</span>';
+var Example3='<span>Ничего не вижу.</span>$$$<span style="display: none">$$$  Ничего не слышу.$$$</span>$$$<span>Никому ничего не скажу.</span>';
+Str+=ComposeExamples([{code:Example1},{code:Example2},{code:Example3}],{leftcolperc:50,leftfontsize:13});
+
+Str+="<div class='SExampleHeader'>";
+Str+="Но, если внутри невидимого (visibility: hidden) контейнера есть элемент с явно указанным visibility: visible, этот элемент и всё его содержимое станут видимыми.";
+Str+="</div>";
+
+var Example4='<div style="visibility: hidden">$$$  <span>Ничего не вижу.</span>$$$  <span style="visibility: visible">$$$    Ничего не слышу.</span>$$$  <span>Никому ничего не скажу.</span>$$$</div>';
+Str+=ComposeExamples([{code:Example4}],{leftcolperc:50,leftfontsize:13});
+
+
+
+document.write(Str);

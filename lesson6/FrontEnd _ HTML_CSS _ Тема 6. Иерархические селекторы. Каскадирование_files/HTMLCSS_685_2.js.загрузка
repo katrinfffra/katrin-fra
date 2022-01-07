@@ -1,0 +1,42 @@
+﻿var Str="";
+
+
+Str+="<div class='SExampleHeader' style='margin-bottom: -5px'>";
+Str+="Стилевое свойство <b>opacity</b> &mdash; непрозрачность элемента и всего его содержимого.";
+Str+="</div>";
+
+Str+="<div class='SExampleHeader'>";
+Str+="Возможные значения:";
+Str+="<br><b>opacity: <i>непрозрачность</i></b>, где <i>непрозрачность</i> &mdash; дробное число от 0 до 1.<br>Значение 1 означает полностью видимый элемент,<br>значение 0 &mdash; полностью невидимый (аналогично visibility: hidden).";
+Str+="</div>";
+
+var Example1=
+'<img src="images/vorobey2.jpg">$$$'+
+'<img src="images/vorobey2.jpg" style="opacity: 0.4">$$$'+
+'<img src="images/vorobey2.jpg" style="opacity: 0">$$$'+
+'<img src="images/vorobey2.jpg" style="opacity: 1">';
+Str+=ComposeExamples([{code:Example1}],{leftcolperc:60,leftfontsize:13});
+
+Str+="<div class='SExampleHeader'>";
+Str+="Если внутри полупрозрачного контейнера есть полупрозрачные элементы, итоговая непрозрачность элементов умножается на непрозрачность контейнера.";
+Str+="</div>";
+
+var Example1=
+'<img src="images/vorobey2.jpg">$$$'+
+'<img src="images/vorobey2.jpg" style="opacity: 0.5">$$$'+
+'<div style="opacity: 0.4">$$$'+
+'  <img src="images/vorobey2.jpg">$$$'+
+'  <img src="images/vorobey2.jpg" style="opacity: 0.5">$$$'+
+'</div>$$$'
+;
+Str+=ComposeExamples([{code:Example1}],{leftcolperc:60,leftfontsize:13});
+
+//Str+="<div class='SExampleDescription'>";
+//Str+="Стилевое свойство <b>opacity</b> &mdash; из стандарта <b>CSS3</b>.";
+//Str+=" В частности, Microsoft Internet Explorer поддерживает стилевое свойство opacity только <b>начиная с версии 9</b>.";
+//Str+="<br>В более ранних версиях Internet Explorer можно использовать:<br><b>filter: alpha(opacity=<i>значение</i>)</b>.";
+//Str+="</div>";
+
+
+
+document.write(Str);

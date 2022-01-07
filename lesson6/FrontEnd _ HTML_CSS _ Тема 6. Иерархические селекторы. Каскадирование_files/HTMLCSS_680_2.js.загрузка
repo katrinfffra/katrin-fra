@@ -1,0 +1,14 @@
+﻿var Str="";
+
+var Example5='<p style="display: inline-block; width: 110px; border: solid red 1px">У меня живет козленок.</p>$$$<p style="display: inline-block; width: 100px; border: solid red 1px">Я козленка в сад зеленый отнесу.</p>$$$<p style="display: inline-block; width: 120px; border: solid red 1px">Он заблудится в саду.</p>';
+Str+=ComposeExamples([{code:Example5}],{leftcolperc:58,leftfontsize:13});
+
+Str+="<div class='SExampleDescription'>";
+Str+="Элементы с display: inline-block по умолчанию выравниваются по базовой линии текста контейнера, однако, это можно изменить стилевым свойством vertical-align элемента (не контейнера!).";
+Str+="</div>";
+
+var Example1='<p style="display: inline-block; width: 50px; border: solid red 1px">$$$  У меня</p>$$$<span style="font-size: 50px">бу</span>$$$<p style="display: inline-block; width: 90px; border: solid red 1px">$$$  Я козленка в сад зеленый отнесу.</p>';
+var Example2='<p style="display: inline-block; width: 50px; border: solid red 1px;$$$  vertical-align: top">У меня</p>$$$<p style="display: inline-block; width: 90px; border: solid red 1px">$$$  Я козленка в сад зеленый отнесу.</p>$$$<p style="display: inline-block; width: 50px; border: solid red 1px;$$$  vertical-align: 20px">в саду</p>';
+Str+=ComposeExamples([{code:Example1},{code:Example2}],{leftcolperc:65,leftfontsize:13});
+
+document.write(Str);

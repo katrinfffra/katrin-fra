@@ -1,0 +1,79 @@
+﻿var Str="";
+
+
+Str+="<div class='SExampleHeader'>";
+Str+="Стилевой селектор псевдокласса <b>:nth-child</b> соответствует элементам, которые в своём контейнере расположены под номерами с некоторыми интервалом.";
+Str+="</div>";
+
+Str+="<div class='SExampleHeader'  style='margin-top: 5px'>";
+Str+="Варианты использования:";
+Str+="<br><b>:nth-child(odd)</b> &mdash; соответствует элементам, которые в своём контейнере нечётные.";
+Str+="<br><b>:nth-child(even)</b> &mdash; соответствует элементам, которые в своём контейнере чётные.";
+Str+="<br><b>:nth-child(<i>i</i>)</b> &mdash; соответствует элементу, который в своём контейнере идёт<br>под номером <i>i</i>.";
+Str+="<br><b>:nth-child(<i>a</i>n+<i>b</i>)</b> &mdash; вместо n будут подставлены числа от 0 и выше;<br>результат вычисления формулы даёт номера дочерних элементов в их контейнере;<br><i>a</i> и <i>b</i> должны быть целыми числами и могут быть отрицательными.";
+Str+="</div>";
+
+var Example1=
+  "<style>$$$"+
+  "  %(.S650a1 )%tr:nth-child(odd) { background-color: #B0B0B0 }$$$"+
+  "</style>$$$"+
+  "%(<div class='S650a1'>)%"+
+  "<table style='border-collapse: collapse'>$$$"+
+  "  <tr><td>первая строка</td></tr>$$$"+
+  "  <tr><td>вторая строка</td></tr>$$$"+
+  "  <tr><td>третья строка</td></tr>$$$"+
+  "  <tr><td>четвёртая строка</td></tr>$$$"+
+  "  <tr><td>пятая строка</td></tr>$$$"+
+  "</table>$$$"+
+  "%(</div>)%"+
+  "";
+var Example3=
+  "<style>$$$"+
+  "  %(.S650a3 )%tr:nth-child(3) { background-color: #B0B0B0 }$$$"+
+  "</style>$$$"+
+  "%(<div class='S650a3'>)%"+
+  "<table style='border-collapse: collapse'>$$$"+
+  "  <tr><td>первая строка</td></tr>$$$"+
+  "  <tr><td>вторая строка</td></tr>$$$"+
+  "  <tr><td>третья строка</td></tr>$$$"+
+  "  <tr><td>четвёртая строка</td></tr>$$$"+
+  "</table>$$$"+
+  "%(</div>)%"+
+  "";
+var Example4=
+  "<style>$$$"+
+  "  %(.S650a4 )%tr:nth-child(3n+2) { background-color: #B0B0B0 }$$$"+
+  "</style>$$$"+
+  "%(<div class='S650a4'>)%"+
+  "<table style='border-collapse: collapse'>$$$"+
+  "  <tr><td>первая строка</td></tr>$$$"+
+  "  <tr><td>вторая строка</td></tr>$$$"+
+  "  <tr><td>третья строка</td></tr>$$$"+
+  "  <tr><td>четвёртая строка</td></tr>$$$"+
+  "  <tr><td>пятая строка</td></tr>$$$"+
+  "  <tr><td>шестая строка</td></tr>$$$"+
+  "</table>$$$"+
+  "%(</div>)%"+
+  "";
+var Example5=
+  "<style>$$$"+
+  "  %(.S650a5 )%tr:nth-child(-n+3) { background-color: #B0B0B0 }$$$"+
+  "</style>$$$"+
+  "%(<div class='S650a5'>)%"+
+  "<table style='border-collapse: collapse'>$$$"+
+  "  <tr><td>первая строка</td></tr>$$$"+
+  "  <tr><td>вторая строка</td></tr>$$$"+
+  "  <tr><td>третья строка</td></tr>$$$"+
+  "  <tr><td>четвёртая строка</td></tr>$$$"+
+  "  <tr><td>пятая строка</td></tr>$$$"+
+  "  <tr><td>шестая строка</td></tr>$$$"+
+  "  <tr><td>седьмая строка</td></tr>$$$"+
+  "</table>$$$"+
+  "%(</div>)%"+
+  "";
+Str+=ComposeExamples([{code:Example1},{code:Example3},{code:Example4},{code:Example5}],{leftcolperc:65,leftfontsize:13,autoquoteattrs:true});
+
+
+
+
+document.write(Str);

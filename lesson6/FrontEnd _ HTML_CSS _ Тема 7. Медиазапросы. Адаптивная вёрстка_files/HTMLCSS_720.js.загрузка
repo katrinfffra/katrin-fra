@@ -1,0 +1,38 @@
+﻿var Str="";
+
+Str+="<div class='SExampleHeader'>";
+Str+="Стилевая директива <b>@media</b> позволяет некоторые стилевые описания применять лишь в том случае, если отображение веб-страницы происходит на конкретном типе (типах) устройств отображения.";
+Str+="</div>";
+
+function GetExample1(DivClass,Mode)
+{
+  // Mode: 0 - исходный код, 1 - для экрана, 2 - для принтера
+  var S=""+
+  "<style>$$$"+
+  "  %(."+DivClass+" )%p { color: blue; font-style: italic }$$$";
+  if ( !Mode )
+    S+="  @media print$$$  {$$$";
+  if ( Mode!=1 )
+    S+=""+
+      "    %(."+DivClass+" )%h2 { text-align: center }$$$"+
+      "    %(."+DivClass+" )%p { color: black !important }$$$";
+  if ( !Mode )
+    S+="  }$$$";
+  S+=""+
+  "</style>$$$"+
+  "%(<div class='"+DivClass+"'>)%"+
+  "<h2>Мохаммед Али</h2>$$$"+
+  "<p>Мохаммед Али  &mdash; американский боксёр-профессионал, выступавший в тяжёлой весовой категории.</p>$$$"+
+  "  <p>Один из самых известных и узнаваемых спортсменов.</p>$$$"+
+  "  <p>После <span>чемпионского боя с Сонни Листоном</span> сменил имя на Кассиус Икс, затем на Мохаммед Али.</p>$$$"+
+  "%(</div>)%"+
+  "";
+  return S;
+}
+Str+=ComposeExamples(
+[
+  {code:GetExample1("S730a",0),printpreview:true,screencode:GetExample1("S730b",1),printcode:GetExample1("S730c",2)}
+],{leftcolperc:55});
+
+
+document.write(Str);

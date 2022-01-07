@@ -1,0 +1,69 @@
+﻿var Str="";
+
+Str+="<div class='SExampleHeader'>";
+Str+="Стилевой селектор <b>[<i>атрибут=значение</i>]</b> &mdash; соответствует всем элементам, имеющим данный атрибут, равный данному значению.";
+Str+="</div>";
+
+var Example=
+  "<style>$$$"+
+  '  %(.S640b )%[align=center] { color: red }$$$'+
+  "</style>$$$"+
+  "%(<div class='S640b'>)%"+
+  "<p>Муравьиные семьи могут существовать на протяжении долгого периода времени.</p>$$$"+
+  "<p align=center>Королева может жить до 20 лет, рабочие особи живут от 1 до 3 лет.</p>$$$"+
+  "<p>Самцы живут всего несколько недель.</p>$$$"+
+  "<p align=right>Муравьиные королевы живут в 100 раз дольше, чем большинство одиночных насекомых аналогичного размера.</p>$$$"+
+  "%(</div>)%"+
+  "";
+Str+=ComposeExamples([{code:Example}],{leftcolperc:50,leftfontsize:13,autoquoteattrs:true});
+
+Str+="<div class='SExampleHeader'>";
+Str+="Стилевой селектор <b>[<i>атрибут^=значение</i>]</b> &mdash; соответствует всем элементам, у которых значение данного атрибута начинается с указанного значения.";
+Str+="</div>";
+
+var Example=
+  "<style>$$$"+
+  '  %(.S640c )%[href^="http://"] { font-weight: bold }$$$'+
+  "</style>$$$"+
+  "%(<div class='S640c'>)%"+
+  "<p>Королева может жить до 20 лет, рабочие особи$$$<a href='test.html' target='Info'>живут</a> от 1 до 3 лет.</p>$$$"+
+  "<p>Самцы, <a href='http://www.site.com/p.html'>однако</a>, живут всего несколько недель.</p>$$$"+
+  "%(</div>)%"+
+  "";
+Str+=ComposeExamples([{code:Example}],{leftcolperc:61,leftfontsize:13,autoquoteattrs:true});
+
+Str+="<div class='SExampleHeader'>";
+Str+="Стилевой селектор <b>[<i>атрибут$=значение</i>]</b> &mdash; соответствует всем элементам, у которых значение данного атрибута заканчивается на указанное значение.";
+Str+="</div>";
+
+var Example=
+  "<style>$$$"+
+  '  %(.S640d )%[href$=".gif"] { color: red }$$$'+
+  "</style>$$$"+
+  "%(<div class='S640d'>)%"+
+  "<p><a href='images/queen.png'>Королева</a> может жить до 20 лет, <a href='images/worker.gif'>рабочие особи</a> живут от 1 до 3 лет.</p>$$$"+
+  "%(</div>)%"+
+  "";
+
+Str+=ComposeExamples([{code:Example}],{leftcolperc:61,leftfontsize:13,autoquoteattrs:true});
+
+Str+="<div class='SExampleHeader'>";
+Str+="Стилевой селектор <b>[<i>атрибут*=значение</i>]</b> &mdash; соответствует всем элементам, у которых значение данного атрибута содержит указанное значение.";
+Str+="</div>";
+
+var Example=
+  "<style>$$$"+
+  '  %(.S640e )%[href*="queen"] { color: green }$$$'+
+  "</style>$$$"+
+  "%(<div class='S640e'>)%"+
+  "<p><a href='images/queen.png'>Королева</a> может жить до 20 лет, <a href='images/worker.gif'>рабочие особи</a> живут от 1 до 3 лет.</p>$$$"+
+  "%(</div>)%"+
+  "";
+Str+=ComposeExamples([{code:Example}],{leftcolperc:61,leftfontsize:13,autoquoteattrs:true});
+
+//Str+="<div class='SExampleDescription'>";
+//Str+="Селекторы атрибутов [атрибут^=значение], [атрибут$=значение], [атрибут*=значение] введены в CSS3.<br>Internet Explorer до версии 9.0 их не поддерживает.";
+//Str+="</div>";
+
+
+document.write(Str);
