@@ -12,31 +12,38 @@ body{
 }
 .bio{
     position: absolute;
-    top: 108px;
-    left: 24px;
-    z-index: -1;
+    top: 136px;
+    left: -71px;
+    z-index: 1;
 }
 
 .yang{
     position: absolute;
     left: -93px;
-    z-index: 1;
+    z-index: 2;
 }
 .man{
     position: absolute;
     top: -7px;
     left: 192px;
-    z-index: 1;
+    z-index: 2;
 }
 .smoking{
     position: absolute;
     top: 65px;
     z-index: 3;
-    z-index: 5;
+ 
 }
 .footer{
     margin-top: 324px;
 }
-.smoking:hover{
-   z-index: -2;
+
+.man:hover{
+    z-index: 4;
+}
+.yang:hover{
+    z-index: 4;
+}
+.bio:hover{
+    z-index: 4;
 }
