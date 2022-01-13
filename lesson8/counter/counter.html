@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <style>
+        h3 {
+            counter-reset: plita;
+        }
+
+        p::before {
+            counter-increment: plita;
+            content: 'hilka 'counter(plita)'';
+        }
+
+        h3 {
+            counter-reset: country;
+        }
+
+        img.red {
+            width: 10px;
+            height: 50px;
+            color: red;
+        }
+
+        a::after {
+            content: attr();
+        }
+    </style>
+</head>
+
+<body>
+    <h3>country</h3>
+    <p>сиэтл</p>
+    <p>нотингем</p>
+    <p>портланд</p>
+    <p>бруклин</p>
+    <p>бунгало</p>
+    <h3>ceramomorazze</h3>
+    <p>мари</p>
+    <p>монте</p>
+    <p>монако</p>
+    <hr>
+    <h3>country</h3>
+    <p>polo</p>
+    <p>foto</p>
+    <p>walk</p>
+    <p>gjjh</p>
+    <p>bungalo</p>
+    <h3>ceramomorazze</h3>
+    <p>mary</p>
+    <p>monte</p>
+    <p>ocean</p>
+    <hr>
+    <a href="#">first</a><img src="" class="red"></img>
+    <a href="#">second</a>
+    <a href="#">third</a>
+</body>
+
+</html>

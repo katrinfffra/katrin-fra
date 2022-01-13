@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+.img{margin: 0 50%;
+    position: relative;
+}
+.bio{
+    position: absolute;
+    top: 108px;
+    left: 24px;
+    z-index: -1;
+}
+
+.yang{
+    position: absolute;
+    left: -93px;
+    z-index: 1;
+}
+.man{
+    position: absolute;
+    top: -7px;
+    left: 192px;
+    z-index: 1;
+}
+.smoking{
+    position: absolute;
+    top: 65px;
+    z-index: 3;
+    z-index: 5;
+}
+.footer{
+    margin-top: 324px;
+}
+.smoking:hover{
+   z-index: -2;
+}

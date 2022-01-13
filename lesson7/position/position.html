@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url("../../img/4545.jpg") no-repeat;
+            background-size: cover;
+        }
+
+        .first {
+            width: 50px;
+            height: 50px;
+            background: orangered;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .second {
+            width: 50px;
+            height: 50px;
+            background: rgb(19, 25, 112);
+        }
+
+
+        .third {
+            width: 50px;
+            height: 50px;
+            background: rgb(112, 19, 39);
+        }
+
+        .parent {
+            padding: 1px;
+            padding: 14px;
+            width: 400px;
+            height: 350px;
+            background: rgb(229, 233, 14);
+            margin: 100px auto;
+        }
+
+        .parent>div {
+            padding: 1px;
+            width: 350px;
+            height: 300px;
+            background: orchid;
+            margin: 20px auto;
+
+        }
+
+        .parent>div>div {
+
+            width: 300px;
+            height: 200px;
+            background: paleturquoise;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        .heider {
+            width: 100%;
+            height: 100px;
+            background: url("../../img/145.jpg") no-repeat;
+            background-size: cover;
+        }
+
+        .heider ul {
+            width: 200px;
+            margin: 0px auto;
+        }
+
+        .heider ul li {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heider">
+        <ul>
+            <li>sport</li>
+            <li>madgic</li>
+            <li>nike</li>
+        </ul>
+    </div>
+    <div class="parent">
+        <div>
+            <div>
+                <div class="first"></div>
+                <div class="second"></div>
+                <div class="third"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

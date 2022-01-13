@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARKET_FORM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        fieldset {
+            border: double red 3px;
+        }
+
+        h1 {
+            margin: 20px 0px;
+
+        }
+
+        .art {
+            margin-bottom: 5px;
+        }
+
+        .nameart {
+            width: 200px;
+            float: left;
+        }
+
+        .article {
+            margin-left: 200px;
+            margin-right: 100px;
+        }
+
+
+        #but {
+            width: 100%;
+        }
+
+        .rubrika {
+            margin-bottom: 5px;
+        }
+
+        .prg {
+            width: 200px;
+            float: left;
+        }
+
+        .wrap-prg {
+            margin-left: 200px;
+        }
+
+        .public {
+            margin-bottom: 5px;
+        }
+
+        .pbl {
+            float: none;
+            display: block;
+        }
+
+        .publc {
+            float: none;
+            display: block;
+        }
+
+        .comment {
+            margin-bottom: 5px;
+        }
+
+        .check {
+            width: 200px;
+            float: left;
+        }
+
+        .text {
+            margin-bottom: 5px;
+        }
+
+        .area {
+            float: none;
+            margin-bottom: 5px;
+        }
+
+        #textarea {
+            width: 350px;
+            height: 70px;
+        }
+
+        .butt {
+            width: 144px;
+            height: 42px;
+            background-color: #adb5b187;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conteiner">
+        <form action="http://fe.it-academy.by/TestForm.php" method="get">
+            <fieldset>
+                <h1>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</h1>
+                <div class="art">
+                    <div class="nameart">
+                        <label for="but">
+                            Название статьи:
+                        </label>
+                    </div>
+                    <div class="article">
+                        <input type="text" name="aticle" id="but">
+                    </div>
+                </div>
+
+                <div class="rubrika">
+                    <div class="prg">
+                        <label for="programm"> Рубрика:</label>
+
+                    </div>
+
+                    <div class="wrap-prg">
+                        <select name="programming" id="programm">
+                            <option value="">компьютерная техника</option>
+                            <option value="">графика и дизайн</option>
+                            <option value="">програмирование</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="public">
+                    <div class="pbl">
+                        <label for="publc">Публикация:</label>
+                    </div>
+
+                    <div class="publc">
+                        <input type="radio" name="radio[]" value="br1"> на сайте<br>
+                        <input type="radio" name="radio[]" value="br2" checked>в журнале<br>
+                        <input type="radio" name="radio[]" value="br3">на сайте и в журнале
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="check">
+                        <label for="checking">Разрешить комментарии:</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="check[]" value="gr" checked id="checking">
+
+                    </div>
+
+                </div>
+                <div class="text">
+                    <div class="area">
+                        <label for="textarea">Текст статьи:</label>
+                    </div>
+                    <div>
+                        <textarea name="text" placeholder="" id="textarea"></textarea>
+                    </div>
+
+                </div>
+                <div>
+                    <input type="submit" value="Опубликовать" class="butt">
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>

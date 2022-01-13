@@ -19,3 +19,23 @@
         width: 100%;
         margin-left: 0px;
     }
+    .button{  
+        width: 87px;
+        height: 40px;
+        position: fixed;
+        top: 38px;
+        right: 9px;
+      
+    }
+        .button ul li a {
+            margin-top: 0px;
+            display: inline-block;
+            font-size: 10px;
+          
+        
+        } 
+    }
+
+
+     
+   

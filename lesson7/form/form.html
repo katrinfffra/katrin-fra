@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        textarea {
+            width: 400px;
+            height: 100px;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- form1 -->
+    <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        <label>
+            Фамиля:
+            <input type="text" name="text" placeholder="last name"><br>
+        </label>
+
+        <input type="text" name="text" placeholder="name" id="age"><br>
+        <input type="text" name="text" maxlength="10" placeholder="first name"><br>
+        <hr>
+        <input type="checkbox" name="check[]" value="yes1">
+        <input type="checkbox" name="check[]" value="yes2" checked>
+        <input type="checkbox" name="check[]" value="yes3">
+        <input type="checkbox" name="check[]" value="yes4">
+        <input type="checkbox" name="check[]" value="yes5">
+        <input type="checkbox" name="check[]" value="yes6" checked>
+        <hr>
+        <input type="radio" name="radio" value="br1">
+        <input type="radio" name="radio" value="br2" checked>
+        <input type="radio" name="radio" value="br3">
+        <input type="radio" name="radio" value="br4">
+        <input type="radio" name="radio" value="br5">
+        <input type="radio" name="radio" value="br6">
+        <input type="radio" name="radio" value="br7">
+        <input type="radio" name="radio" value="br8">
+        <hr>
+        <label for="age">Возвраст</label>
+        <input type="radio" name="radio1" value="br1">
+        <input type="radio" name="radio1" value="br2" s>
+        <input type="radio" name="radio1" value="br3">
+        <input type="radio" name="radio1" value="br4">
+        <input type="radio" name="radio1" value="br5">
+        <input type="radio" name="radio1" value="br6" checked>
+        <input type="radio" name="radio1" value="br7">
+        <input type="radio" name="radio1" value="br8">
+        <hr>
+        <textarea name="text" placeholder="please wait me"></textarea>
+        <hr>
+        <hr>
+        <input type="file" name="file"><br>
+        <input type="hidden" name="formtype" value="form1">
+        <hr>
+
+        <select name="city[]">
+            <optgroup label="belarus">
+                <option value="minsk">minsk</option>
+                <option value="mogilev" selected>mogilev</option>
+                <option value="vitebsk">vitebsk</option>
+                <option value="grodno">grodno</option>
+                <option value="bobruisk">"bobruisk</option>
+            </optgroup>
+            <optgroup label="moskva">
+                <option value="moskva">moskva</option>
+                <option value="piter">piter</option>
+            </optgroup>
+
+        </select>
+        <input type="submit" value="send">
+        <input type="reset" value="reset">
+        <input type="button" value="button">
+        <hr>
+        <hr>
+        <button type="submit" value="send">
+            <span>
+                Hi!
+            </span>
+        </button>
+        <button type="reset" value="reset">
+            <span>скинь me!!</span>
+        </button>
+        <button type="button" value="buttom" disabled>
+            <span>buttom</span>
+        </button>
+    </form>
+    <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        Ваше имя:
+        <input type="text" name="first name" placeholder="имя" style="margin-bottom: 10px;"><br>
+        Ваш пароль:
+        <input type="password" name="pass" placeholder="123456" maxlength="10">
+        Запонить меня:
+        <input type="checkbox" name="check" checked><br>
+        <input type="submit" value="Отправить">
+    </form>
+    <hr>
+    <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        Фамилия:
+        <input type="text" name="last name"><br>
+        Имя:
+        <input type="text" name="first name"><br>
+        Отчество:
+        <input type="text" name="patronumic"><br>
+        E-mail:
+        <input type="text" name="mail"><br>
+        Согласен с правилами сайта:
+        <input type="checkbox" name="check[]" value="br" checked><br>
+        <input type="submit" value="Peгистрация">
+    </form>
+</body>
+
+</html>
