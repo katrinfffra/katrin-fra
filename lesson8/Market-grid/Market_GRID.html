@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market_GRID</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .grid * {
+            border-radius: 8px rgb(9, 9, 27);
+            background-color: darkturquoise;
+            text-align: center;
+            padding-left: 10px;
+            padding-top: 10px;
+            display: inline;
+
+        }
+
+        .grid {
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            column-gap: 30px;
+            grid-template-rows: 57px minmax(200px, auto) 1fr;
+            row-gap: 30px;
+
+        }
+
+        div.grid {
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 57px 1fr 57px;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #add8e6;
+            color: #1726f7;
+            text-align: center;
+            font-size: 24px;
+            padding: 12px;
+        }
+
+
+
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .sidebar {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            grid-template-rows: 50px minmax(100px, auto);
+            grid-template-areas:
+                "name"
+                "ssilka";
+
+        }
+
+        .name {
+            grid-area: name;
+        }
+
+        .ssilka {
+            grid-area: ssilka;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+
+
+
+        .footer {
+            grid-area: footer;
+            background-color: #add8e6;
+            color: #1726f7;
+            text-align: center;
+            font-size: 24px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="header">привет участникам соревнований!</div>
+        <div class="sidebar">
+            <h2 class="name">Виды спорта:</h2>
+            <ul class="ssilka">
+                <li><a href="#">биатлон</a></li>
+                <li><a href="#">прыжки в длину</a></li>
+                <li><a href="#">прыжки в высоту</a></li>
+                <li><a href="#">футбол</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"> конькобежный спорт</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">Main</div>
+    <div class="footer"> главное не победа, а участие!</div>
+    </div>
+
+</body>
+
+</html>

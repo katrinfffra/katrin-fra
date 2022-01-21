@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testflex</title>
+    <style>
+        .grid * {
+            border-radius: 8px rgb(9, 9, 27);
+            background-color: darkturquoise;
+            text-align: center;
+            padding-left: 10px;
+            padding-top: 10px;
+            display: inline;
+        }
+
+        .grid {
+            display: grid;
+            /* grid-template-columns: repeat(4, 200px); */
+            /* grid-template-rows: repeat(4, 30px); */
+            grid-template: repeat(4, 30px)/ repeat(4, 200px);
+            row-gap: 50px;
+            row-gap: 10px;
+        }
+
+        /* header */
+        .grid div:first-child {
+            grid-column: 1/5;
+            /* grid-column: 1/5 */
+        }
+
+        /* footer */
+        .grid div:last-child {
+            grid-column: 1/5;
+            /* grid-column: 1/5 */
+            /* justify-self:strech */
+
+        }
+
+        .grid div:nth-child(2) {}
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div>привет участникам соревнований!</div>
+        <div>bar</div>
+        <div>Main</div>
+        <div>главное не победа, а участие!</div>
+
+
+
+    </div>
+</body>
+
+</html>

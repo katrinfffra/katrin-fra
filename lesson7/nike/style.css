@@ -2,111 +2,373 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
-.conteiner{
-    width: 1200px;
+
+.container{
+    width: 1300px;
     margin: 0 auto;
-}
-body{
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    background: #e1e1e1c7;
+   
 }
 .clearfix::after{
     content: "";
     display: block;
     clear: both;
-}
-ul{
+    }
+li{
     list-style-type: none;
 }
 a{
     text-decoration: none;
-    color: inherit;
+    color: #000000;
 }
-/* heider */
-.heider-top{
-    background-color: #E1E1E1;
-    height: 80px;
-    
+a:hover{
+    text-decoration: underline;
+    color: rgb(255, 0, 0);
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+   font-family: 'Roboto', sans-serif;
+}
+/* header */
+.header-top ul{
+    float: right;
+    padding-top: 30px;
+    margin-bottom: 26px;
 
 }
-.heider-top.conteiner{
+.header-top ul li{
+    position: relative;
+    float: left;
+    margin-right: 14px;
+}
+.header-top ul li:nth-child(3){
+    margin-right: 88px;
+}
+.header-top ul li:last-child::after{
+    content: "1";
+    color: rgb(244, 247, 246);
+ text-align: center;
+    width: 23px;px;
+    height: 23px;
+    background: red top  right ;
+    border-radius: 100%;
+    position: absolute;
+    display: inline-block;
+    top: -9px;
+    right: -25px;
+    
     
 }
-.shop span{
-
-float: left;
+.header-top ul li a{
+   font-family:'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
 }
-.shop span:first-child{
+.header-left {
+    float: left;
+    padding-left: 80px;
+    padding-top: 14px;
+}
+.header-left span{
     font-family:'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 34px;
     line-height: 40px;
     text-transform: uppercase;
-    color: #000000;
-    width: 129px;
-    height: 40px;
-    margin-left: 80px;
-    margin-top: 19px;
-    margin-right: 36px;
-}
-.shop span:last-child{
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-    color: #000000;
-    margin-top: 23px;
-    margin-left: 10px;
-}
-.search{
-    position: absolute;
-    width: 368px;
-    height: 44px;
-    left: 580px;
-    top: 18px;
+    color: #000000;}
+    .header-left span:nth-child(2){
+        font-size: 27px;
+        margin-right: 36px;
+    }
+    .header-left span:last-child{
+        font-family:'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        vertical-align: 5px;
+    }
+    .container-menu{
+        width: 1300px;
+        margin: 0 auto;
+        background:rgb(241, 241, 196) ;
+        opacity: 0.6;
+    }
+    .margin{
+        float: right;
+        position: relative;
+        top: 15px;
+        right: 24px;
+    }
+    .input{
+        width: 368px;
+        height: 44px;
+       
+        
+        background: #F3F3F3;
+        border: none;
+        float: right;
+        font-family:  'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 121.4%;
+        color: rgba(74, 70, 70, 0.5);
+        padding-right: 194px;
+        top: 15px;
+        right: 24px;
+    }
+    
+   
 
-    background: #FFFFFF;
-    border-radius: 63px;
-    float: left;
-    margin-left: 196px;
+    .margin span{
+       position: absolute;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: rgba(74, 70, 70, 0.9);
+        display: inline-block;
+        top: 12px;
+        left: 311px;
+    }
+        
+    
+    /* nike */
+    .menu-nike-right
+        {height: 686px;
+        background: url('img/Air-Jordan-1-High5\ 1.png') no-repeat center;
+        background-size: cover;
+        position: relative;
+    }
+    .menu-nike-right ul.nike-menu {
+        padding:  26px 217px;
+        color: #FFFFFF;
+  
+    }
+   
+    
+    .menu-nike-right ul.nike-menu li{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+        float: left;
+    }
+    .menu-nike-right ul.nike-menu li a{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        
+        float: left;
+        color: #FFFFFF;
+    }
+      .menu-nike-right  ul.nike-menu li:first-child{
+          margin-right:  67px;
+      }
+      .menu-nike-right  ul.nike-menu li:nth-child(2){
+            margin-right: 57px;
+      }
+      .menu-nike-right  ul.nike-menu li:nth-child(3){
+          margin-right: 56px;
+      }
+      .menu-nike-right  ul.nike-menu li:nth-child(4){
+        margin-right: 58px;
+    }
+    .menu-nike-right  ul.nike-menu li:nth-child(5){
+        margin-right: 55px;
+    }
+   .menu-nike-right h1
+   {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+    padding-left: 176px;
+    padding-top: 39px;
+   }
+   .menu-nike-right h2{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 121.4%;
+    color: #000000;
+    padding-left: 176px;
+    padding-top: 24px;
+    
+   }
+   .menu-nike-right h2 span{
+    color: #ff0000;
+   }
+   .menu-nike-right input{
+    position: absolute;
+    width: 152px;
+    height: 45px;
+    left: 176px;
+    top: 370px;
+    background:  #D72D33;
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    border:none;
+    left: 175px;
+    top: 312px;
+   }
+
+   /* magazine */
+   .magazine div.container.clearfix{
+       background: #FFFFFF;
+   }
+   .magazine div.container.clearfix h2.popular{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    color: #CA0914;
+    padding-left: 86px;
+    padding-top: 32px;
+    padding-bottom: 42px;
 }
-.search span{
-    width: 151px;
-    height: 22px;
-    font-family: Open Sans;
+div.catalog-item{
+    padding-left: 72px;
+}
+div.catalog-item div.item{
+    float: left;
+    margin-right: 43px;
+    margin-bottom: 74px;
+    
+}
+div.catalog-item div.item img{
+    margin-bottom: 34px;
+}
+div.catalog-item div.item h3{
+    margin-bottom: 12px;
+    font-family:"Open Sans",sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 121.4%;
-    color: rgba(74, 70, 70, 0.5);
-    vertical-align: -11px;
-    padding-left: 24px;
+    line-height: 25px;
+    color: #000000;
     
 }
-.heider-top-right{
-    float: right;
-    margin-top: 30px;
-    margin-right: 62px;
+div.catalog-item div.item h4{
+    font-family:"Open Sans",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
 }
-.heider-top-right li{
+.magazine div.container.clearfix h2.new{
+    font-family: "Roboto",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 75px;
+    color: #9D0B1D;
+    padding-left: 176px;
+}
+.magazine div.container.clearfix h4.go{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;  
+    color: black;
+    padding-left: 176px;
+    padding-bottom: 280px;
+}
+/* footer */
+.footer-catalog{
+    padding-top: 48px;
+    padding-left: 80px;
+}
+ul.reg{
+    float: left;}
+    ul.reg li{
+        font-family:" Open Sans",sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;  
+        color: #000000;
+        margin-bottom: 16px;
+        margin-right: 86px;
+    } 
+    ul.help{
+        float: left;
+    }
+    ul.help li{
+        font-family: "Open Sans",sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+        margin-bottom: 16px;
+        margin-right: 126px;
+    }
+    ul.help li:first-child{
+        font-weight: bold;
+    }
+    ul.airshp{
+        float: left;
+    }
+    ul.airshp li{
+        font-family: "Open Sans",sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000; 
+        margin-bottom: 16px;
+        margin-right: 70px;
+    }
+    ul.airshp li:first-child{
+        font-weight: bold;
+    }
+ul.appstore{
     float: left;
-    margin-right: 16px;
 }
-.heider-top-right li a{
-    font-family:'Open Sans', sans-serif; 
+ul.appstore{
+margin-right: 145px;
+}
+
+.pho li:first-child{
+    font-family:" Open Sans",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000; 
+}
+
+.pho li:last-child{
+    font-family: "Open Sans",sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
     color: #000000;
+   
 }
-  .elips{
-    width: 17px;
-    height: 17px;
-    float: right;
-    margin-right: -252px;
-    margin-top: 24px;
+.pho li:nth-child(2){
+    font-size: 30px;
 }
