@@ -1,4 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 @import "variables";
-h1{
-    color:$green;
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+}
+body{
+    font-family: $ff;
+    font-size: $fs14;
+}
+a{
+   text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+
+.container{
+    margin: 0 auto;
+    width: $container-width;
 }
