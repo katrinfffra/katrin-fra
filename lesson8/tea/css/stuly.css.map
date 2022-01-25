@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,EAAE,CAAA;EACE,KAAK,ECAF,OAAO;CDCb",
+    "sources": [
+        "stuly.scss",
+        "variables.scss"
+    ],
+    "names": [],
+    "file": "stuly.css"
+}
