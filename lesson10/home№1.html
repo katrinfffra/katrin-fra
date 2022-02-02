@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWorkNumberOne</title>
+</head>
+
+<body>
+    <script>
+        var name = prompt("name", "Иванов Иван Иванович");
+        console.log(name);
+        var age = parseFloat(prompt("Сколько Вам лет?", "7лет"));
+        if (isNaN(age)) {
+            console.log("nocorrect");
+        }
+        else {
+            console.log("true");
+        }
+
+        var day = parseFloat(prompt("Ваш возраст в днях?", "3700лет"));
+        if (isFinite(day)) {
+            console.log("ok");
+        }
+        else {
+            console.log("no correct");
+
+        };
+        // var year = parseFloat(prompt("Через 5 лет Вам будет?", "15лет"));
+        age += 5;
+        // console.log(year);
+
+
+        var gender = confirm("Ваш пол мужской?");
+        if (gender) {
+            console.log("мужской");
+        }
+        else {
+            console.log("женский");
+        };
+
+        var pensioner = confirm("Вы пенсионер?");
+        if (pensioner) {
+            console.log((gender == "мужской") && (age >= 63)) || ((gender == "женский") && (age >= 58));
+
+        }
+        else {
+            console.log("не пенсионер");
+        }
+
+
+        var d = alert('\n' + "Ваше ФИО:" + (name) + '\n' + "Ваш возраст  в годах:" + (age) + '\n' + "Ваш возраст в днях:" + (day) + '\n' + "Через 5 лет Вам будет:" + (age + 5) + '\n' + "Ваш пол мужской:" + (gender) + '\n' + "Вы на пенсии:" + (pensioner));
+        console.log(d);
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

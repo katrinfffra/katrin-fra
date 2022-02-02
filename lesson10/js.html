@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+
+<body>
+    <script>
+
+        var name = prompt("Ваше имя", "Катрин");
+        console.log(name);
+        var fio = prompt("Отчество", "Сергеевна");
+        console.log(fio);
+        var finam = prompt("Фасмилию", "Франюк");
+        console.log(finam);
+        var age = parseFloat(prompt("Ваш возраст", "145"));
+        console.log(age);
+        var age = parseInt(prompt("U age?"));
+        console.log(age);
+        var floor = confirm("Ваш пол М ?");
+        console.log(floor);
+        var pension = confirm("ВЫ на пенсии ?");
+        console.log(pension);
+        var age = 18;
+        if (age == 18) {
+            console.log("я большой");
+        };
+        // тупо по числу
+        console.log(age == 18);
+        // тройное равно сравнивает по типу поэтому false либо '' ПРЕОБРАЗОВАТЬ В ЧИСЛО ПРИ PARSEINT OR PARSEFLOAT
+        console.log(age === '18');
+        age += 36;
+        console.log(age);
+        var name = "Alex";
+        var age = 25;
+        // && логическое И 
+        console.log((name == "serge") && (age > 18));
+        console.log((name == "Alex") && (age > 18));
+        var molod = (age < 18);
+        console.log(molod);
+        //    || или
+        var distancia = 2000;
+        var summa = 500;
+        console.log((distancia < 3500) || (summa < 366));
+        // логическое не !=
+        var temp = 35;
+        var zharko = (temp > 30);
+        console.log(zharko);
+        console.log(!zharko);
+        var a = 5;
+        console.log(5 === 5);
+        console.log(5 === parseInt('5'));
+        console.log(5 === parseFloat('5'));
+        var a = 5;
+        a += 56
+        if (a > 5) {
+            console.log("Kate");
+        };
+        var age = 18;
+        if (age == 18) {
+            console.log("sun");
+            console.log("sunkatya");
+        };
+        var age = 25;
+        if (age < 3) {
+            console.log("test1");
+        }
+        else {
+            console.log("test2");
+        };
+        var a = 35;
+        if (a === parseInt('23')) {
+            console.log(5);
+        }
+        else {
+            console.log(18);
+        };
+        var money = 5000;
+        if (money > 3499) {
+            alert("денег нет");
+            alert("держись")
+        }
+        else {
+            alert("sun")
+        };
+        var name = alert("name");
+        console.log(name);
+        var fio = prompt("name", "test");
+        console.log(fio);
+        // alert+name
+        var d = alert("name" + fio);
+        console.log(d);
+        var speed = parseInt(prompt("U speed?"));
+        if (speed > 60) {
+            console.log("too much");
+        }
+        else {
+            console.log("normal");
+        };
+        var speed = parseInt(prompt("u speed?"));
+        var gender = prompt("a U? (Man or Woman):");
+        if (speed > 60) {
+            if (gender == "M")
+                console.log("пошел");
+            else
+                console.log("пошла");
+        }
+        else {
+            if (gender == "M")
+                console.log("пошел");
+            else
+                console.log("пошла");
+        };
+        var name = parseFloat("3")
+        console.log(isNaN(name));
+        var name = "Katya";
+        console.log(isNaN(name));
+        var a = parseFloat("1");
+
+        console.log(isFinite(a));
+        var rost = parseFloat(prompt("a u rost?"));
+        if (isNaN(rost)) {
+            console.log("no correct");
+        }
+        else {
+            console.log("u a rost" + (rost) + "sm");
+        };
+        var age = 30;
+        age > 30 ? console.log("30") : console.log("ty");
+        var color = parseFloat(prompt("цвета радуги?"));
+        var colorname;
+        switch (color) {
+            case 1:
+                alert("green");
+                break;
+            case 2:
+                colorname = "purple";
+                break;
+            default:
+                alert("no color");
+                break
+
+        }
+        console.log(colorname);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

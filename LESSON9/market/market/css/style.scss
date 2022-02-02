@@ -1,6 +1,7 @@
 @import"variable";
 
 
+
 *{
     margin: 0;
     padding: 0;
@@ -69,4 +70,16 @@ h2{
     align-self: center;
     background-color: $light_bl;
     padding: 10px;
+}
+@media all and (max-width:500px) {
+    .header{
+        width: 100%;
+        display: inline-block;
+        font-size: 12px;
+    }
+    .main{
+        width: 100%;
+        display: inline-block;
+        font-size: 12px;
+    }
 }
