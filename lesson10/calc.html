@@ -9,7 +9,7 @@
     <style>
         * {
             margin: 0;
-            bottom: 0;
+            padding: 0px;
             box-sizing: border-box;
         }
 
@@ -25,20 +25,21 @@
 
     <div id="result"></div>
 
-    <input type="button" value="1" onclick="getNum(1)">
-    <input type="button" value="2" onclick="getNum(2)">
-    <input type="button" value="3" onclick="getNum(3)"><br>
-    <input type="button" value="4" onclick="getNum(4)">
-    <input type="button" value="5" onclick="getNum(5)">
-    <input type="button" value="6" onclick="getNum(6)"><br>
-    <input type="button" value="7" onclick="getNum(7)">
-    <input type="button" value="8" onclick="getNum(8)">
-    <input type="button" value="9" onclick="getNum(9)"><br>
-    <input type="button" value="+">
-    <input type="button" value="-">
-    <input type="button" value="%"><br>
-    <input type="button" value="*">
-    <input type="button" value="=">
+    <input type="button" value="1" onclick="getNumber(1)">
+    <input type="button" value="2" onclick="getNumber(2)">
+    <input type="button" value="3" onclick="getNumber(3)"><br>
+    <input type="button" value="4" onclick="getNumber(4)">
+    <input type="button" value="5" onclick="getNumber(5)">
+    <input type="button" value="6" onclick="getNumber(6)"><br>
+    <input type="button" value="7" onclick="getNumber(7)">
+    <input type="button" value="8" onclick="getNumber(8)">
+    <input type="button" value="9" onclick="getNumber(9)"><br>
+    <input type="button" value="0" onclick="getNumber(10)">
+    <input type="button" value="+" onclick="getOpation('+')">
+    <input type="button" value="-" onclick="getOpation('-')"><br>
+    <input type="button" value="/" onclick="getOpation('/')">
+    <input type="button" value="*" onclick="getOpation('*')">
+    <input type="button" value="=" onclick="getOpation('=')">
 
 
 
@@ -47,12 +48,41 @@
 
 
     <script>
-        function getNum(num) {
-            console.log(num)
+        var x = null, y = null, oper = ""
+        function getNumber(num) {
+            if (x === null) {
+                x = num;
+            }
+            else {
+                y = num;
+            }
+        }
 
+        function getOpation(oper) {
+            operVariable = oper
+        }
 
+        function result() {
+            var EL = document.getElementById('result');
+
+            switch (operVariable) {
+                case "+":
+                    EL.innerText = x + y;
+                    break;
+                case "-":
+                    EL.innerText = (x - y).toString();
+                    break;
+                case "/":
+                    EL.innerText = (x / y).toString();
+                    break;
+                case "*":
+                    EL.innerText = (x * y).toString();
+                    break;
+            }
 
         }
+
+
     </script>
 </body>
 
