@@ -10,10 +10,88 @@
 
 <body>
     <script>
-        var color = ["red", "purplr", "yellow", "blue"];
-        for (var i = 0; i = color.length; i++);
-        var colorName = colors[i];
-        console.log(colorName[i]);
+        // var color = ["red", "purplr", "yellow", "blue"];
+        // for (var i = 0; i = color.length; i++);
+        // var colorName = colors[i];
+        // console.log(colorName[i]);
+        var arr = [1, 2, 3, "tru", 5, NaN];
+        console.log(arr[3]);
+        arr[2] = "world";
+        console.log(arr[2]);
+        // for (var i = 0; i = arr.length; i++) {
+        //     console.log(arr[i]);
+        // };
+        // massiv
+        var persen = ["name", "lastname", "age"];
+        // object
+        var persenObj =
+        {
+            name: "katya",
+            lastname: "Catherin",
+            age: 32,
+        }
+        var test = " name"
+        persenObj['test'] = "ggffg"
+        // console.log("name" + persenObj.name + "lastname" + persenObj.lastname + "age" + persenObj.age)
+        // console.log("name" + persenObj['test'] + "lastname" + persenObj['lastname'] + "age" + persenObj['age'])
+
+        // massivобьектов
+        var persens = [
+            {
+                name: "katya1",
+                lastname: "Catherin",
+                age: 32,
+            },
+            {
+                name: "katya2",
+                lastname: "Catherin",
+                age: 32,
+            },
+            {
+                name: "katya3",
+                lastname: "Catherin",
+                age: 32,
+            }
+
+        ]
+        // persen.name - хэш.;
+        // persen[name];
+        console.log("gender" in persenObj);
+        console.log("name" in persenObj);
+        // создать ключ
+        persenObj.gender = "M";
+        console.log("gender" in persenObj);
+        //удатлить клю
+        delete persenObj["gender"];
+        persenObj.gender = "M";
+        console.log("gender" in persenObj);
+        delete persenObj[gender];
+        console.log("gender" in persenObj);
+        // for (var key in persenObj) {
+        //     console.log(key);
+        // };
+        // for (var key in persenObj) {
+        //     console.log(key + 'value' + persenObj[key]);
+
+        // }
+        for (var key in persenObj) {
+            console.log("key :" + key + " :value" + persenObj[key]);
+        };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
 </body>
 

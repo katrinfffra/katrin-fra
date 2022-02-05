@@ -35,19 +35,20 @@
 
         var gender = confirm("Ваш пол мужской?");
         if (gender) {
-            console.log("мужской");
+            gender = "мужской";
         }
         else {
-            console.log("женский");
+            gender = "женский";
         };
 
         var pensioner = confirm("Вы пенсионер?");
         if (pensioner) {
             console.log((gender == "мужской") && (age >= 63)) || ((gender == "женский") && (age >= 58));
+            pensioner = "пенсионер";
 
         }
         else {
-            console.log("не пенсионер");
+            pensioner = "не пенсионер";
         }
 
 

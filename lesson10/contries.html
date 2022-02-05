@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countries</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        input {
+            height: 25px;
+            margin: 3px;
+            padding: 5px;
+            background-color: blue;
+            color: aliceblue;
+            border-radius: 9px;
+            border: none;
+
+        }
+    </style>
+</head>
+
+
+
+
+
+
+<body>
+
+    <input type="button" value="ввод информации о стране" onclick="getCountryData()"><br>
+    <input type="button" value="получение информации о стране" onclick="getCountryNum()"><br>
+    <input type="button" value="перечень всех стран" onclick=""><br>
+    <input type="button" value="удаление информации о стране" onclick="">
+
+
+
+    <script>
+        var countryObj = {};
+
+        function getCountryData() {
+            var countryName = prompt("Введите название страны");
+            var capitalName = prompt("Введите название столицы");
+
+            addCountry(countryName, capitalName)
+        }
+
+        function addCountry(countryName, capitalName) {
+            countryObj[countryName] = capitalName;
+        }
+        var countryObj = { "Berlin": "German", "Russia": "Moscov", "Gyprus": "Larnaca" }
+
+        function getCountryNum() {
+
+            var countryName = prompt("Введите название столицы");
+            if (countryName in countryObj);
+
+            getCountryInfo(countryName)
+
+        }
+        function getCountryInfo(countryName) {
+            if (countryName in countryObj)
+                return "страна:" + countryName + "столица" + countryObj[countryName];
+            else
+                return "нет информации о стране" + countryName + "!";
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

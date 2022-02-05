@@ -25,14 +25,14 @@
         floor <= 3700 ? console.log(" не верно") : console.log("ок");
 
         var gender = confirm("Ваш пол мужской?");
-        gender ? console.log("мужской") : console.log("женский");
+        gender ? gender = "мужской" : gender = "женский";
         var pensioner = confirm("Вы пенсионер?");
-        (gender == "мужской" && age >= 63 || gender == "женский" && age >= 58) ? console.log("pensioner") : console.log("no - pensioner");
+        (gender == "мужской" && age >= 63 || gender == "женский" && age >= 58) ? pensioner = "пенсионер" : pensioner = "не пенсионер";
 
-        var d = alert('\n' + " Введите Ваше ИМЯ:" + (firstname) + '\n' + "Введите Вашу Фамилию:" + (lastname) + '\n' + "Введите Ваше Отчество:" + (patromynic) + '\n' + "Сколько Вам лет?" + (age) + '\n' + "через 5 лет Вам будет:" + (age + 5) + '\n' + "Ваш возраст в днях:" + (floor) + '\n' + "Ваш пол:" + (gender) + '\n' + "Вы на пенсии:" + (pensioner));
+        var d = alert('\n' + " Введите Ваше ФИО:" + (firstname) + (lastname) + (patromynic) + '\n' + "Сколько Вам лет?" + (age) + '\n' + "через 5 лет Вам будет:" + (age + 5) + '\n' + "Ваш возраст в днях:" + (floor) + '\n' + "Ваш пол:" + (gender) + '\n' + "Вы на пенсии:" + (pensioner));
         console.log(d);
 
-        
+
 
 
 
