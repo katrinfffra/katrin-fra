@@ -90,4 +90,17 @@ h2 {
   background-color: #add8e6;
   padding: 10px;
 }
+
+@media all and (max-width: 500px) {
+  .header {
+    width: 100%;
+    display: inline-block;
+    font-size: 12px;
+  }
+  .main {
+    width: 100%;
+    display: inline-block;
+    font-size: 12px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

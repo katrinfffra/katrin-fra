@@ -20,16 +20,17 @@
             console.log("true");
         }
 
-        var day = parseFloat(prompt("Ваш возраст в днях?", "3700лет"));
-        if (isFinite(day)) {
-            console.log("ok");
-        }
-        else {
-            console.log("no correct");
+        // var day = parseFloat(prompt("Ваш возраст в днях?", "3700лет"));
+        // if (isFinite(day)) {
+        //     console.log("ok");
+        // }
+        // else {
+        //     console.log("no correct");
 
-        };
+
+
         // var year = parseFloat(prompt("Через 5 лет Вам будет?", "15лет"));
-        age += 5;
+
         // console.log(year);
 
 
@@ -41,18 +42,16 @@
             gender = "женский";
         };
 
-        var pensioner = confirm("Вы пенсионер?");
-        if (pensioner) {
-            console.log((gender == "мужской") && (age >= 63)) || ((gender == "женский") && (age >= 58));
+        var pensioner;
+        if (((gender = "мужской") && (age >= 63) || (gender = "женский") && (age >= 58))) {
             pensioner = "пенсионер";
-
         }
         else {
-            pensioner = "не пенсионер";
+            pensioner = " не пенсионер";
         }
 
 
-        var d = alert('\n' + "Ваше ФИО:" + (name) + '\n' + "Ваш возраст  в годах:" + (age) + '\n' + "Ваш возраст в днях:" + (day) + '\n' + "Через 5 лет Вам будет:" + (age + 5) + '\n' + "Ваш пол мужской:" + (gender) + '\n' + "Вы на пенсии:" + (pensioner));
+        var d = alert('\n' + "Ваше ФИО:" + (name) + '\n' + "Ваш возраст  в годах:" + (age) + '\n' + "Ваш возраст в днях:" + (age * 365) + '\n' + "Через 5 лет Вам будет:" + (age + 5) + '\n' + "Ваш пол мужской:" + (gender) + '\n' + "Вы на пенсии:" + (pensioner));
         console.log(d);
 
 

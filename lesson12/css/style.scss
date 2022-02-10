@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import"variable";
+
+
+*{
+    margin-right: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $ff;
+    font-size: $fs16;
+    font-weight: $normal;
+    height: 10000px;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+.container{
+    margin: 0 auto;
+    width: $container;
+}
+// header
+.header{
+    .container{
+        background-color:$black;
+        height: 168px;
+        .header-top{
+            display: flex;
+            select{
+                width: 73px;
+                height: 24px;
+                background:$select;
+                border-radius: 31px;
+                font-size: $fs14;
+                line-height: 16px;
+                color: #FFFFFF;
+                margin-left: 96px;
+                margin-left: 96px;
+                margin-left: 96px;
+                margin-top: 18px;
+                border: none;
+                option{
+                    display: flex;
+                    align-items: center;
+                   
+                    background-color: transparent;
+                }
+            }
+            .phone{
+                display: flex;
+                a{
+                    font-weight: $sami-bold;
+                    font-size: $fs14;
+                    line-height: 16px;
+                    color:$butfon;
+                    text-decoration: none;
+                }
+            }
+            ul{
+                li{
+                   
+                    a{
+                        font-weight: $normal;
+                        font-size: $fs14;
+                        line-height: 16px;
+                        text-decoration-line: underline;
+                        color: $coloa;
+                    }
+                   
+                  
+                }
+               
+            }
+        }
+        .header-bottom{
+            display: flex;
+            justify-content: space-between;
+           
+            .cat{
+                width: 148px;
+                height: 46px;
+                background: $sale;
+                border-radius: 8px;
+                color: $black;
+                font-weight: $sami-bold;
+                font-size: $fs18;
+                line-height: 21px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 88px;
+                margin-top: 27px;
+               
+            }
+            span{
+                font-weight: $sami-bold;
+                font-size: $fs26;
+                line-height: 30px;
+                color: $butfon;
+                margin-top: 39px;
+               
+            }
+            .search{
+                width: 459px;
+                height: 56px;
+                background: $select;
+                border-radius: 60px;
+                border: none; 
+                font-size: $fs16;
+                line-height: 19px;
+                color: $butfon;
+                opacity: 0.6;
+                display: flex;
+                padding-left: 23px;
+                margin-top: 23px;
+            }
+            .auth{
+                display: flex;
+                justify-content: space-between;
+                align-self: center;
+                margin-top: 19px;
+                margin-right: 52px;
+                ul{
+                    li{
+                        a{
+                            font-size: $fs14;
+                            line-height: 16px;
+                            color: $butfon;
+                        }
+                    }
+                }
+            }
+           
+        }
+    }
+}
+// slider
+.slider{
+    .container{
+        background: url(../img/foto.png) no-repeat center;
+        height: 360px;
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 31px;
+        position: relative;
+    }
+    h1{
+        font-weight: $bold;
+        font-size: $fs26;
+        line-height: 37px;
+        color: $butfon;
+        padding-top: 67px;
+        padding-left: 236px;
+    }
+    p{
+        font-size: $fs16;
+        line-height: 19px; 
+        color: $butfon;
+        opacity: 0.6;
+        padding-left: 84px;
+    }
+    button{
+        width: 220px;
+        height: 46px;
+        border: 2px solid $sale;
+        box-sizing: border-box;
+        border-radius: 28px;
+        background-color: transparent;
+        font-weight: $sami-bold;
+        font-size: $fs16;
+        line-height: 19px;
+        color: $sale;
+        position: absolute;
+        left: 82px;
+        top: 186px;
+    }
+}
+// assort
+.assort{
+    .container{
+        #assort-wrap{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 80px 88px;
+            .assort{
+                width: 352px;
+                height: 280px;   
+                background: $backpick;
+                border-radius: 20px;
+                       
+                .assort-top{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h3{
+                        font-weight: $normal;
+                        font-size:$fs16;
+                        line-height: 20px;
+                        color: $black;
+                        margin-top: 24px;
+                        margin-left: 24px;
+       
+                    }
+                    span{
+                        font-weight: $sami-bold;
+                        font-size: $fs24;
+                        line-height: 20px;
+                        color: $black;
+                        margin-top: 24px;
+                        margin-right: 24px;
+    
+    
+                    }
+                }
+               div:nth-child(2){
+                   text-align: center;
+               }
+            }
+          
+           
+        }
+    }
+}
+// hit
+.hit{
+    .container{
+        h2{
+            font-weight:$bold;
+            font-size: $fs32;
+            line-height: 37px;
+            color: $black;
+            margin-left: 88px;
+            margin-top: 49px;
+        }
+        #hit-wrap{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 100px;
+            margin-left: 110px;
+            
+            .hit-card{
+                
+              display: flex;
+                
+               
+                .hit-top{
+                    width: 176px;
+                    height:182px ;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+              
+                }
+         
+         
+                
+            }
+        }
+        
+    }
+}
+.name{
+    .container{
+        #nam-car{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 100px;
+            margin-left: 88px;
+            .name-wrap{
+                .price{
+               
+                    font-weight: $bold;
+                    font-size: $fs18;
+                    line-height: 21px;
+                    color: $black;
+        
+                    
+                    
+                }
+                span.weit{
+                    
+                            font-weight: $bold;
+                            font-size: $fs14;
+                            line-height: 16px;
+                            text-decoration: line-through;
+                            color: $select ;
+                        
+                }
+                h3{
+                    font-weight: $normal;
+                    margin-top: 4px;
+                    font-size: 1$fs14;
+                    line-height: 16px;
+        
+                    color: rgba(0, 0, 0, 0.5);
+        
+                }
+            }
+        }
+        
+   
+        
+    }
+}

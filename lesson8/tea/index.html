@@ -94,109 +94,37 @@
             </div>
         </div>
     </div>
-    <div class="product">
+    <!-- product -->
+    <div class="best-product">
+
         <div class="container">
-
-            <div class="card">
-                <div id="card-wrap">
-                    <div class="card-top">
-                        <span>4.7</span>
-                        <img src="img/hard.png" alt="hard">
-                    </div>
-                    <div class="tes">
-                        <img src="img/tea.png" alt="tea">
-                    </div>
-                    <h4>Шоу Мэй </h4>
-                    <h5>Черный чай</h5>
-                    <p>
-                        Очень легкий чай с тонким ароматом,
-                        имеет сладковатый вкус с
-                        легкой кислинкой.
-                    </p>
-                    <p>
-                        100 гр. /
-                        <span>15 BYR</span>
-                    </p>
-                    <button>В корзину</button>
+            <h2>Лучшие товары</h2>
+            <div id="card-wrap"></div>
+            <!-- <div class="card">
+                <div class="card-top">
+                    <span>4.7</span>
+                    <img src="../img/hard.png" alt="star">
+                </div>
+                <div>
+                    <img src="../img/tea.png" alt="tea1">
                 </div>
 
-
-            </div>
-            <div class="card">
-                <div id="card-wrap">
-                    <div class="card-top">
-                        <span>4.7</span>
-                        <img src="img/hard.png" alt="hard">
-                    </div>
-                    <div class="tes">
-                        <img src="img/tea2.png" alt="tea">
-                    </div>
-                    <h4>Шоу Мэй </h4>
-                    <h5>Черный чай</h5>
-                    <p>
-                        Очень легкий чай с тонким ароматом,
-                        имеет сладковатый вкус с
-                        легкой кислинкой.
-                    </p>
-                    <p>
-                        100 гр. /
-                        <span>15 BYR</span>
-                    </p>
-                    <button>В корзину</button>
-                </div>
+                <h4>Юньнань Юнь</h4>
+                <h5>Белый чай</h5>
+                <p class="descr">Очень легкий чай с тонким ароматом, имеет сладковатый вкус с легкой кислинкой.</p>
+                <p class="weight">100 гр. /</p>
+                <p class="price">15 BYR</p>
+                <button>В корзину</button>
+            </div> -->
 
 
-            </div>
-            <div class="card">
-                <div id="card-wrap">
-                    <div class="card-top">
-                        <span>4.7</span>
-                        <img src="img/hard.png" alt="hard">
-                    </div>
-                    <div class="tes">
-                        <img src="img/tea3.png" alt="tea">
-                    </div>
-                    <h4>Шоу Мэй </h4>
-                    <h5>Черный чай</h5>
-                    <p>
-                        Очень легкий чай с тонким ароматом,
-                        имеет сладковатый вкус с
-                        легкой кислинкой.
-                    </p>
-                    <p>
-                        100 гр. /
-                        <span>15 BYR</span>
-                    </p>
-                    <button>В корзину</button>
-                </div>
 
 
-            </div>
-            <div class="card">
-                <div id="card-wrap">
-                    <div class="card-top">
-                        <span>4.7</span>
-                        <img src="img/hard.png" alt="hard">
-                    </div>
-                    <div class="tes">
-                        <img src="img/tea4.png" alt="tea">
-                    </div>
-                    <h4>Шоу Мэй </h4>
-                    <h5>Черный чай</h5>
-                    <p>
-                        Очень легкий чай с тонким ароматом,
-                        имеет сладковатый вкус с
-                        легкой кислинкой.
-                    </p>
-                    <p>
-                        100 гр. /
-                        <span>15 BYR</span>
-                    </p>
-                    <button>В корзину</button>
-                </div>
 
 
-            </div>
+
+
+
         </div>
     </div>
     <!-- sale! -->
@@ -260,6 +188,7 @@
 
     <script>
         var cardWrap = document.getElementById("card-wrap");
+        var str = "";
         var card = [
             {
                 imgUrl: "img/tea.png",
@@ -268,55 +197,63 @@
                 descr: "Очень легкий чай с тонким ароматом, имеет сладковатый вкус с легкой кислинкой.",
                 weight: "100 гр.",
                 price: "15 BYR",
-                rating: "4.7"
-
+                rating: 4.7
             },
             {
-                imgUrl: "img/tea.png",
+                imgUrl: "img/tea2.png ",
                 title: "Шоу Мэй",
                 titleSmall: "Черный чай",
                 descr: "Очень легкий чай с тонким ароматом, имеет сладковатый вкус с легкой кислинкой.",
                 weight: "100 гр.",
                 price: "15 BYR",
-                rating: "4.7"
-
+                rating: 4.7
             },
             {
-                imgUrl: "img/tea.png",
+                imgUrl: "img/tea3.png ",
                 title: "Шоу Мэй",
                 titleSmall: "Черный чай",
                 descr: "Очень легкий чай с тонким ароматом, имеет сладковатый вкус с легкой кислинкой.",
                 weight: "100 гр.",
                 price: "15 BYR",
-                rating: "4.7"
-
+                rating: 4.7
+            },
+            {
+                imgUrl: "img/tea4.png ",
+                title: "Шоу Мэй",
+                titleSmall: "Черный чай",
+                descr: "Очень легкий чай с тонким ароматом, имеет сладковатый вкус с легкой кислинкой.",
+                weight: "100 гр.",
+                price: "15 BYR",
+                rating: 4.7
             }
-        ]
-        var str = ";"
-        for (let i = 0; i = <ard.length; i++) {
-        //     str += '<div id="card-wrap">
-        //         < div class="card-top" >
-        //                 <span>4.7</span>
-        //                 <img src="img/hard.png" alt="hard">
-        //             </div>
-        //             <div class="tes">
-        //                 <img src="img/tea.png" alt="tea">
-        //             </div>
-        //             <h4>Шоу Мэй </h4>
-        //             <h5>Черный чай</h5>
-        //             <p>
-        //                 Очень легкий чай с тонким ароматом,
-        //                 имеет сладковатый вкус с
-        //                 легкой кислинкой.
-        //             </p>
-        //             <p>
-        //                 100 гр. /
-        //                 <span>15 BYR</span>
-        //             </p>
-        //             <button>В корзину</button>
-        // </div > '
+        ];
+
+
+        for (i = 0; i < card.length; i++) {
+            var item = card[i];
+            str += ` <div class="card">
+                <div class="card-top">
+                    <span>${item.rating}</span>
+                    <img src="../tea/img/hard.png" alt="star">
+                </div>
+                <div>
+                    <img src="${item.imgUrl}" alt="tea1">
+                </div>
+
+                <h4>${item.title}</h4>
+                <h5>${item.titleSmall}</h5>
+                <p class="descr">${item.descr}</p>
+                <p class="weight">${item.weight}/</p>
+                <p class="price">${item.price}</p>
+                <button>В корзину</button>
+            </div>`
+        }
+        cardWrap.innerHTML = str;
+
+
+
     </script>
-    >
+
 
 
 </body>

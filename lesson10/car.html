@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="car.js"></script>
+    <title>Car</title>
+    <style>
+        * {
+            margin: 0px;
+            position: 0px;
+            box-sizing: border-box;
+        }
+
+        #wrap {
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            margin-top: 15px;
+
+
+        }
+
+        #app {
+            width: 150px;
+            height: 100px;
+            background-color: red;
+            font-size: 20px;
+            text-align: center;
+            color: white;
+            padding: 28px;
+            transition-duration: 1s;
+            transition-property: all;
+            transition-delay: 1s;
+            /* margin: 10px auto; */
+            transition-timing-function: cubic-bezier(0.05, 0.74, 0.7, 0.51);
+
+        }
+
+        @keyframes MyAnimation {
+            from {
+                from background-color: rgb(71, 8, 82);
+            }
+
+            50% {
+                background-color: white;
+                color: black;
+            }
+
+            70% {
+                background-color: blue;
+
+            }
+
+            to {
+                background-color: rgb(102, 224, 32);
+
+            }
+        }
+
+        #spr {
+            width: 150px;
+            height: 100px;
+            background-color: rgb(71, 8, 82);
+            font-size: 24px;
+            color: beige;
+            padding: 15px;
+            text-align: center;
+            border-radius: 50px;
+            animation: MyAnimation 5s 10 steps(3) forwards;
+        }
+
+        @keyframes MyAnimation2 {
+            from {
+                background: url('img/ball_animation.png') 0 0;
+
+            }
+
+            to {
+                background: url('img/ball_animation.png') -319px 0;
+            }
+
+            /* 361-42=314 */
+        }
+
+        #ball {
+            width: 42px;
+            height: 47px;
+            animation: MyAnimation2 1s steps(7) infinite;
+            margin: 0px auto;
+        }
+
+        #fare {
+            width: 625px;
+            height: 50px;
+
+
+            /* animation: MyAnimation2 1s steps(6) infinite; */
+        }
+
+        /* #pict {
+            display: flex;
+            justify-content: space-between;
+        } */
+
+        #app:hover {
+            background-color: green;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="app">
+            Coca-Cola
+        </div>
+        <div id="spr">
+            Animation
+        </div>
+    </div>
+
+    <div id="pict">
+        <div id="ball"></div>
+        <!-- <img src="" alt="ball_animation" > -->
+        <!-- <img src="img/ball_animation.png" alt="ball_animation" id="ball"><br> -->
+        <!-- <img src="img/post-40553-1186089859.gif" alt="fare" id="fare"> -->
+    </div>
+
+
+
+    <button onclick="">click me!</button>
+</body>
+
+</html>

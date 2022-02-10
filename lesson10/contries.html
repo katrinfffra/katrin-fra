@@ -34,9 +34,10 @@
 <body>
 
     <input type="button" value="ввод информации о стране" onclick="getCountryData()"><br>
-    <input type="button" value="получение информации о стране" onclick="getCountryNum()"><br>
-    <input type="button" value="перечень всех стран" onclick=""><br>
-    <input type="button" value="удаление информации о стране" onclick="">
+    <input type="button" value="получение информации о стране" onclick="getCapitalData()"><br>
+
+    <input type="button" value="удаление информации о стране" onclick="addCountryDel()"><br>
+    <input type="button" value="перечень всех стран" onclick="enumCountryData()"><br>
 
 
 
@@ -48,28 +49,62 @@
             var capitalName = prompt("Введите название столицы");
 
             addCountry(countryName, capitalName)
-        }
+        };
 
         function addCountry(countryName, capitalName) {
             countryObj[countryName] = capitalName;
+        };
+
+
+        function addCountryDel() {
+            var countryName = prompt("Введите название страны,которую хотите удалить");
+            alert("страна:" + countryName + "удалена!");
+            deleteCountry(countryName)
         }
-        var countryObj = { "Berlin": "German", "Russia": "Moscov", "Gyprus": "Larnaca" }
 
-        function getCountryNum() {
+        function deleteCountry(countryName) {
+            delete countryObj[countryName];
+        }
 
-            var countryName = prompt("Введите название столицы");
-            if (countryName in countryObj);
+        function getCapitalData() {
+            var countryName = prompt("Введите название страны");
+            if (countryName in countryObj) {
+                alert("страна:" + countryName + "\n" + "столица:" + countryObj[countryName]);
+            } else {
+                alert("страна:" + countryName + "ненайдена!");
 
+            }
             getCountryInfo(countryName)
-
         }
         function getCountryInfo(countryName) {
             if (countryName in countryObj)
-                return "страна:" + countryName + "столица" + countryObj[countryName];
+                return 'страна: ' + countryName + ' столица: ' + countryObj[countryName];
             else
-                return "нет информации о стране" + countryName + "!";
+                return 'нет информации о стране ' + countryName + '!';
+        }
+        function enumCountryData() {
+
+            listCountrys();
+            console.log("список стран:" + listCountrys());
+
+
 
         }
+        function listCountrys() {
+            var res = "";
+            for (var key in countryObj)
+
+                res += '\n' + getCountryInfo(key);
+            return res;
+
+
+        }
+
+        // addCountry();
+
+        // console.log("список стран:" + listCountrys());
+
+
 
 
 

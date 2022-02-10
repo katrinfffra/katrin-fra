@@ -21,7 +21,7 @@ line-height: 45px;
 color: $header-text;
 text-align: center;
 
-margin-bottom: 49px;
+margin-bottom: 47px;
 }
 h3{
     height: 3px;
@@ -236,157 +236,179 @@ button{
 }
 // catalog
 .catalog{
-   
-    .container{
-        h2{
-            padding-top:120px;
-            margin-bottom:27px;
-        }
-        .catalog_top{
+   .container{
+       h2{
+           margin-bottom: 27px;
+           margin-top: 27px;
+       }
+       .catalog_top{
            display: flex;
-           & > div{
-               
-               background-size: cover;
-               background-repeat: no-repeat;
-               background-position: center;
-               border-radius: 28px;
-               padding-top: 23px;
-                padding-left: 38px;
-                height: 323px;
-               &:first-child{
-                    background-image: url("../img/cat1.jpg");
-                    flex-grow: 3;
-                    margin-right: 20px;
-                    background-size: 108% 118%;
-               }
-              &:last-child{
-                    background-image: url("../img/cat2.jpg");
-                    flex-grow: 1;
-                    background-size: 100% 100%;
-              }
-           }
-             
-        }
-        .catalog_bottom{
-            display: flex;
-            margin-top: 20px;
            
             &>div{
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                border-radius: 28px;
-                padding-top: 23px;
-                padding-left: 38px;
-                height: 323px;
+                
+               padding-top: 23px;
+               padding-left: 38px;
+               height: 323px;
+                     
                 &:first-child{
-                    background-image: url("../img/cat3.jpg");
+                    flex-grow: 3;
+                    background: url(../img/cat1.jpg) no-repeat center;
+                    background-size: 108% 120%;
+                   
+                }
+                &:last-child{
+                    flex-grow: 1;
+                    background: url(../img/cat2.jpg) no-repeat center;
+                    background-size: 100% 100%;
+                    border-radius: 18px;
+
+                }
+
+            }
+       }
+       .catalog_bottom{
+            display: flex;
+            margin-top: 16px;
+            &>div{
+                height: 323px;
+                padding-top: 24px;
+                padding-left: 38px;
+                
+                &:first-child{
                     flex-grow: 2;
-                    background-size: 115% 116%;
+                    background: url(../img/cat3.jpg) no-repeat center;
                     margin-right: 20px;
+                    border-radius: 18px;
                 }
                 &:nth-child(2){
-                    background-image: url("../img/cat4.jpg");
                     flex-grow: 4;
-                    background-size: 107% 114%;
+                    background: url(../img/cat4.jpg) no-repeat center;
                     margin-right: 20px;
                 }
                 &:last-child{
-                    background-image: url("../img/cat5.jpg");
-                    flex-grow: 1;
-                    background-size: 100% 109%;
+                    flex-grow: 2;
+                    background: url(../img/cat5.jpg) no-repeat center;
+                    margin-right: 20px;
+                    border-radius: 18px;
                 }
-            }
-        }
-    }
-}
-.product{
-    padding-top: 210px;
-   
-    .container{
-        display: flex;
-        justify-content: center;
-        .card{
-            width: 285px;
-            height: 555px;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 20px;
-            padding: 16px;
-            display: flex;
-            margin-right: 30px;
-          
-            .card-top{
-                display: flex;
-                justify-content: space-between;
-                position: relative;
-                padding-top: 35px;
-                padding: 16px;
-                &>span{
-                    padding-left: 34px;
-                    font-size: 18px;
-                    line-height: 25px;
-    
-                    color: #999999;
- 
-               
-                }
-                span::before{
-                    content: "";
-                    position: absolute;
-                    width: 26px;
-                    height: 26px;
-                    background: url("../img/Star\ .png") no-repeat center;
-                    top: 14px;
-                    left: 17px;
-                }
- 
-            }
-            .tes{
-                display: flex;
-                justify-content: center;
-            }
-            h4{
-                margin-top: 36px;
-                font-weight: $sami-bold;
-                font-size:$fs21;
-                line-height: 29px;
-                color: $black;
-                margin-bottom: 13px;
-            }
-            h5{
-                font-weight: $sami-bold;
-                font-size: $fs16;
-                line-height: 22px;
- 
-                color: $black;
-                margin-bottom: 10px;
-            }
-           p{
-                font-size: $fs14;
-                line-height: 19px;
-                font-weight: $sami-bold;
-                margin-bottom: 7px;
-                color: #999999; 
-           }
-            p:last-child{
-                font-size: $fs18;
-                line-height: 25px;
-                color: #999999;
-               
 
-                span{
+            }
+       }
+   }
+
+}
+// product!
+.best-product{
+
+    .container{
+        h2{
+            margin-top: 211px;
+            margin-bottom: 14px;
+        }
+        #card-wrap{
+            display: flex;
+            justify-content: space-between;
+            .card{
+                width: 285px;
+                height: 555px;
+                box-shadow: -10px -10px 20px rgba(245, 245, 245, 0.7), 10px 10px 20px rgba(245, 245, 245, 0.7);
+                border-radius: 20px;
+                background-color:$white ;
+                text-align: center;
+               
+                .card-top{
+                    display: flex;
+                    justify-content: space-between;
+                    span{
+                        position: relative;
+                        margin-top: 16px;
+                        margin-left: 24px;
+                        &::before{
+                            content: "";
+                            position: relative;
+                            height: 26px;
+                            width: 26px;
+                            background: url(../img/Star\ .png) no-repeat center;
+                            padding-top: 16px;
+                            padding-left: 24px;
+                            top:6px;
+                            left:0px;
+                        }
+                    }
+                    &>img{
+                        padding-top: 21px;
+                        padding-right: 30px;
+                    }
+                }
+                &>div:nth-child(2){
+                    display: flex;
+                    justify-content: center;
+                    &>img{
+                     margin-top: 36px;
+    
+                    }
+                }
+                  
+                h4{
+                    font-weight: $sami-bold;
                     font-size: $fs21;
                     line-height: 29px;
-                    color: $black; 
+                    color: $black;
+                    text-align: left;
+                    margin-left: 23px;
+                    margin-top: 26px;
                 }
+                h5{
+                    font-weight:$sami-bold;
+                    font-size: $fs16;
+                    line-height: 22px;
+                    color: #999999;
+                    margin-top: 16px;
+                    margin-left: 23px;
+                    text-align: left;
+                   
+                }
+                .descr{
+                    font-weight: $sami-bold;
+                    font-size:$fs14;
+                    line-height: 19px;
+                    color: #999999;
+                    text-align: left;
+                    margin: 2px 23px;
+                }
+                .weight{
+                    font-weight: $normal;
+                    font-size: $fs18;
+                    line-height: 25px;
+                    color: $black;
+                    margin-left: 23px;
+                    text-align: left;
+                    margin-top: 19px;
+                    margin-bottom: 24px;
+                }
+                .price{
+                    font-weight: $sami-bold;
+                    font-size:$fs21;
+                    line-height: 29px;
+                    color:$black;
+                    margin-top: -52px;
+                    margin-bottom: 41px;
+                   
+                  
+                }
+                button{
+                    @include btn(239px)
+                }
+              
             }
-            button{
-                @include btn (239px);
-                margin-top: 29px;
-            }
-        }    
+        }
+        
+        
     }
 }
+
+   
+
 // sale
 .sale{
     .container{

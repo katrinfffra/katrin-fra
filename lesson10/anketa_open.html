@@ -11,7 +11,7 @@
 <body>
     <script>
         var firstname = prompt(" Введите Ваше ИМЯ:", "Иван");
-        isNaN(firstname) ? console.log(alert("ok")) : console.log(alert("Ввод не корректный"));
+        isNaN(firstname) ? console.log("ok") : console.log("Ввод не корректный");
 
         var lastname = prompt("Введите Вашу Фамилию:", "Иванович");
         console.log(lastname);
@@ -21,15 +21,15 @@
         var age = parseFloat(prompt("Сколько Вам лет?"))
         age > 100 ? console.log("no comment") : console.log("ok");
 
-        var floor = parseFloat(prompt("Ваш возраст в днях:", "3700"));
-        floor <= 3700 ? console.log(" не верно") : console.log("ок");
+        // var floor = parseFloat(prompt("Ваш возраст в днях:", "3700"));
+        // floor <= 3700 ? console.log(" не верно") : console.log("ок");
 
         var gender = confirm("Ваш пол мужской?");
         gender ? gender = "мужской" : gender = "женский";
-        var pensioner = confirm("Вы пенсионер?");
+        var pensioner;
         (gender == "мужской" && age >= 63 || gender == "женский" && age >= 58) ? pensioner = "пенсионер" : pensioner = "не пенсионер";
 
-        var d = alert('\n' + " Введите Ваше ФИО:" + (firstname) + (lastname) + (patromynic) + '\n' + "Сколько Вам лет?" + (age) + '\n' + "через 5 лет Вам будет:" + (age + 5) + '\n' + "Ваш возраст в днях:" + (floor) + '\n' + "Ваш пол:" + (gender) + '\n' + "Вы на пенсии:" + (pensioner));
+        var d = alert('\n' + " Введите Ваше ФИО:" + (firstname) + (lastname) + (patromynic) + '\n' + "Сколько Вам лет?" + (age) + '\n' + "через 5 лет Вам будет:" + (age + 5) + '\n' + "Ваш возраст в днях:" + (age * 365) + '\n' + "Ваш пол:" + (gender) + '\n' + "Вы на пенсии:" + (pensioner));
         console.log(d);
 
 
