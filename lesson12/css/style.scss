@@ -3,8 +3,8 @@
 
 
 *{
-    margin-right: 0;
-    padding-right: 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body{
@@ -27,6 +27,7 @@ button{
 .container{
     margin: 0 auto;
     width: $container;
+    background-color: rgb(192, 231, 140);
 }
 // header
 .header{
@@ -57,15 +58,20 @@ button{
             }
             .phone{
                 display: flex;
+                margin-top: 18px;
+                margin-left: 28px;
                 a{
                     font-weight: $sami-bold;
                     font-size: $fs14;
                     line-height: 16px;
                     color:$butfon;
                     text-decoration: none;
+                   
+
                 }
             }
             ul{
+                margin-top: 18px;
                 li{
                    
                     a{
@@ -193,6 +199,7 @@ button{
             justify-content: space-between;
             align-items: center;
             margin: 80px 88px;
+            margin-bottom: 49px;
             .assort{
                 width: 352px;
                 height: 280px;   
@@ -236,80 +243,84 @@ button{
 .hit{
     .container{
         h2{
-            font-weight:$bold;
             font-size: $fs32;
             line-height: 37px;
             color: $black;
             margin-left: 88px;
-            margin-top: 49px;
         }
         #hit-wrap{
             display: flex;
-            justify-content: space-between;
-            margin-right: 100px;
-            margin-left: 110px;
-            
+            justify-content: space-around;
+            margin-bottom: 20px;
             .hit-card{
-                
-              display: flex;
-                
-               
-                .hit-top{
-                    width: 176px;
-                    height:182px ;
-                    text-align: center;
-                    display: flex;
-                    justify-content: center;
-              
+                height: 280px;
+                width: 230px;
+                border: $canon 1px solid;
+                // background-color: $coloa;
+                position: relative;
+                img{
+                    position: absolute;
+                    top: 50px;
+                    left: 40px;
                 }
-         
-         
-                
-            }
-        }
-        
-    }
-}
-.name{
-    .container{
-        #nam-car{
-            display: flex;
-            justify-content: space-between;
-            margin-right: 100px;
-            margin-left: 88px;
-            .name-wrap{
                 .price{
-               
+                    position: absolute;
+                    top: 240px;
+                    left: 0px;
                     font-weight: $bold;
-                    font-size: $fs18;
+                    font-size: $black;
                     line-height: 21px;
                     color: $black;
-        
-                    
-                    
                 }
-                span.weit{
-                    
-                            font-weight: $bold;
-                            font-size: $fs14;
-                            line-height: 16px;
-                            text-decoration: line-through;
-                            color: $select ;
-                        
-                }
-                h3{
-                    font-weight: $normal;
-                    margin-top: 4px;
-                    font-size: 1$fs14;
+                .sale{
+                    position: absolute;
+                    top: 244px;
+                    left: 58px;
+                    color:$price;
+                    font-size: $fs14;
                     line-height: 16px;
-        
-                    color: rgba(0, 0, 0, 0.5);
-        
+                    text-decoration: line-through;
+                }
+                h4{
+                    position: absolute;
+                    top: 263px;
+                    font-size: $fs14;
+                    line-height: 16px;
+                    color: $price;
                 }
             }
         }
-        
-   
-        
+        #hit-product{
+            display: flex;
+            justify-content: space-around;
+            .product-wrap{
+                height: 280px;
+                width: 230px;
+                border: $canon 1px solid;
+                background-color: $coloa;
+                position: relative;
+                img{
+                    position: absolute;
+                    top: 50px;
+                    left: 40px;
+                }
+                .price{
+                    position: absolute;
+                    top: 240px;
+                    left: 0px;
+                    font-weight: $bold;
+                    font-size: $black;
+                    line-height: 21px;
+                    color: $black;
+                }
+                h4{
+                    position: absolute;
+                    top: 260px;
+                    font-size: $fs14;
+                    line-height: 16px;
+                    color: $price;
+                }
+            }
+        }
     }
 }

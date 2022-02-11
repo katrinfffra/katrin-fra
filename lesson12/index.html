@@ -91,37 +91,32 @@
             </div>
         </div>
     </div>
-
-    <!-- hit -->
     <div class="hit">
         <div class="container">
             <h2>Хиты продаж</h2>
             <div id="hit-wrap">
-                <div class="hit-card">
-                    <div class="hit-top">
-                        <img src="img/mar1.png" alt="nikon">
+                <!-- <div class="hit-card">
+                    <img src="img/mar1.png" alt="Canon">
+                    <div>
+                        <span class="price">4 240 р </span>
+                        <span class="sale">5 400 р</span>
                     </div>
+                    <h4>Canon EOS 5D Mark IV Body</h4>
+                </div> -->
+            </div>
+            <div id="hit-product">
+                <div class="product-wrap">
 
+                    <img src="img/mar6.png" alt="g7x">
+                    <span class="price">2 400 р</span>
+                    <h4>Canon PowerShot G7 X Mark II</h4>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- title -->
-    <div class="name">
-        <div class="container">
-            <div id="nam-car"></div>
-            <!-- <div class="name-wrap">
-                <span class="price">4 240 р </span>
-                <span class="weit">5 400 р</span>
-
-                <h3>Объектив Canon EF 50mm <br>
-                    f/1.2L USM
-                </h3>
-            </div> -->
-
 
         </div>
     </div>
+
+
     <script>
         var assortWrap = document.getElementById("assort-wrap")
         var str = "";
@@ -158,77 +153,109 @@
                 </div>`;
         }
         assortWrap.innerHTML = str;
+
         var hitWrap = document.getElementById("hit-wrap")
-        var string = "";
+        var stroke = "";
         var hit = [
             {
                 imgUrl: "img/mar1.png",
+                price: "4 240 р",
+                sale: "5 400 р",
+                title: "Canon EOS 5D Mark IV Body"
+
             },
             {
                 imgUrl: "img/mar2.png",
+                price: "4 240 р",
+                sale: "5 400 р",
+                title: "Canon EOS 5D Mark IV Body"
+
             },
             {
                 imgUrl: "img/mar3.png",
+                price: "4 240 р",
+                sale: "5 400 р",
+                title: "Canon EOS 5D Mark IV Body"
+
             },
             {
                 imgUrl: "img/mar4.png",
+                price: "4 240 р",
+                sale: "5 400 р",
+                title: "Canon EOS 5D Mark IV Body"
+
             },
             {
                 imgUrl: "img/mar5.png",
+                price: "4 240 р",
+                sale: "5 400 р",
+                title: "Canon EOS 5D Mark IV Body"
+
             }
         ];
         for (i = 0; i < hit.length; i++) {
-            var card = hit[i];
-            string += ` <div class="hit-card">
-                    <div class="hit-top">
-                        <img src="${card.imgUrl}" alt="nikon">
+            var magic = hit[i];
+            stroke += `<div class="hit-card">
+                    <img src="${magic.imgUrl}" alt="Canon">
+                    <div>
+                        <span class="price">${magic.price}</span>
+                        <span class="sale">${magic.sale}</span>
                     </div>
-
-                </div>`
+                    <h4>${magic.title}</h4>
+                </div>`;
         };
-        hitWrap.innerHTML = string;
+        hitWrap.innerHTML = stroke;
 
+        var hitProduct = document.getElementById("hit-product")
+        var str = "";
 
-        var namCar = document.getElementById("nam-car")
-        var string = "";
-        var nam = [
+        var prod = [
             {
-                price: "4 240 р",
-                weit: "5 400 р",
-                title: "Объектив Canon EF 50mm <br>f/1.2L USM"
+                imgUrl: "img/mar6.png",
+                price: "2 400 р",
+                title: "Canon PowerShot G7 X Mark II"
             },
             {
-                price: "4 240 р",
-                weit: "5 400 р",
-                title: "Объектив Canon EF 50mm <br>f/1.2L USM"
+                imgUrl: "img/mar7.png",
+                price: "2 400 р",
+                title: "Canon PowerShot G7 X Mark II"
             },
             {
-                price: "6 705 р ",
-                weit: " 7 560 р ",
-                title: "Fujifilm x-519 Body"
+                imgUrl: "img/mar8.png",
+                price: "2 400 р",
+                title: "Canon PowerShot G7 X Mark II"
             },
             {
-                price: "4 240 р",
-                weit: "5 400 р",
-                title: "FST LS-210 Стойка "
+                imgUrl: "img/mar9.png",
+                price: "2 400 р",
+                title: "Canon PowerShot G7 X Mark II"
             },
             {
-                price: "4 240 р",
-                weit: "5 400 р",
-                title: "Сумка Lowepro Apex 140 AW"
+                imgUrl: "img/mar10.png",
+                price: "2 400 р",
+                title: "Canon PowerShot G7 X Mark II"
             }
         ];
-        for (i = 0; i < nam.length; i++) {
-            var car = nam[i];
-            string += ` <div class="name-wrap">
-                <span class="price">${car.price}</span>
-                <span class="weit">${car.weit}</span>
+        for (i = 0; i < prod.length; i++) {
+            var item = prod[i];
+            str += `<div class="product-wrap">
+                        <img src="${item.imgUrl}" alt="g7x">
+                        <span class="price">${item.price}</span>
+                        <h4>${item.title}</h4>
+                </div>`;
 
-                <h3>${car.title}
-                </h3>
-            </div>`
         };
-        namCar.innerHTML = string
+        hitProduct.innerHTML = str;
+
+
+
+
+
+
+
+
+
+
 
 
 
