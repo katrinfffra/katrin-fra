@@ -1,0 +1,47 @@
+/*
+Error: Invalid CSS after "... text-rendering": expected ";", was ": ;"
+        on line 3 of C:\Users\katri\Desktop\katrin\katrin-fra-1\lesson12\css\slyle2.scss
+
+1: .header{
+2:     h2{
+3:         color: text-rendering: ;
+4:     }
+5: }
+
+Backtrace:
+C:\Users\katri\Desktop\katrin\katrin-fra-1\lesson12\css\slyle2.scss:3
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:804:in `block in try_declaration'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `call'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `rethrow'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:809:in `try_declaration'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Users/katri/Desktop/koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Users/katri/Desktop/koala/bin/sass:22:in `load'
+C:/Users/katri/Desktop/koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"... text-rendering\": expected \";\", was \": ;\"\A         on line 3 of C:\Users\katri\Desktop\katrin\katrin-fra-1\lesson12\css\slyle2.scss\A \A 1: .header{\A 2:     h2{\A 3:         color: text-rendering: ;\A 4:     }\A 5: }"; }

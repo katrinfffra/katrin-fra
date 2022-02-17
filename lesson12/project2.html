@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>project2</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header-top">
+                <select>
+                    <option value="minsk">Минск</option>
+                </select>
+                <div class="phone">
+                    <ul>
+                        <li><a href="tel:+375 (29) 707 27 88">+375 (29) 707 27 88</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="tel:+375 (33) 7072788">+375 (33) 7072788</a></li>
+                    </ul>
+                </div>
+                <ul>
+                    <li><a href="#">Фотомагазин</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Доставка и оплата</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Трейд-ин</a></li>
+                </ul>
+            </div>
+            <div class="header-bottom">
+                <button class="cat">Категории</button>
+                <span>Photomarket</span>
+                <input type="button" value="Я ищу.." class="search">
+                <div class="auth">
+                    <ul>
+                        <li>
+                            <a href="#">Адрес</a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="#">Войти</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Корзина</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="catalog">
+        <div class="container">
+            <div class="catalog-breadcrumbs">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Фотоаппараты</a></li>
+                    <li><a href="#">Зеркальные фотоаппараты</a></li>
+                </ul>
+                <h2>Фотоаппараты</h2>
+                <span>36 товаров</span>
+
+            </div>
+            <div class="catalog-sort">
+                <ul class="select">
+                    <li><a href="#">Сортировать по:</a></li>
+                    <li><a href="#">Популярности</a></li>
+                    <li><a href="#">Цене</a></li>
+                    <li><a href="#">Новизне</a></li>
+                </ul>
+                <ul class="number">
+                    <li><a href="">Показывать по:</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">18</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="fillings">
+                <div class="rub">
+                    <label for="cost">Стоимость,руб</label>
+                </div>
+                <div>
+                    <input type="number" value="br1" maxlength="6" placeholder="0" id="cost">
+                    &#9148;
+                    <input type="number" value="br2" maxlength="6" placeholder="999999" id="cost">
+                </div>
+                <div>
+                    <label for="brend">Бренд</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="brend[]" value="br1" id="brend" checked>
+                    <span>Canon (14)</span> <br>
+                    <input type="checkbox" name="brend[]" value="br2" id="brend">
+                    <span>Nikon (13)</span> <br>
+                    <input type="checkbox" name="brend[]" value="br3" id="brend">
+                    <span>Leica (3)</span>
+                </div>
+                <div>
+                    <label for="effect">Число эффективных пикселов</label>
+                </div>
+                <div>
+                    <input type="number" name="num[]" value="br1" maxlength="2" placeholder="0" id="effect">
+                    &#9148;
+                    <input type="number" name="num[]" value="br2" maxlength="2" placeholder="53" id="effect">
+                </div>
+                <div>
+                    <label for="matric">Формат матрицы</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="check[]" value="br1" id="matric">
+                    <span>30х45 мм (2)</span> <br>
+                    <input type="checkbox" name="check[]" value="br2" id="matric">
+                    <span>35 мм (26)</span> <br>
+                    <input type="checkbox" name="check[]" value="br3" id="matric">
+                    <span>44x33 мм (3)</span>
+                </div>
+                <div>
+                    <label for="objmat">Объектив в комплекте</label>
+                </div>
+                <div>
+                    <input type="radio" name="objmat[]" value="br1" id="objmat">
+                    <span>Есть</span>
+                    <input type="radio" name="objmat[]" value="br2" id="objmat">
+                    <span>Нет</span>
+
+                </div>
+            </div>
+            <div class="foto-camera">
+                <div id="camera-wrap">
+                    <div class="card-camera">
+                        <img src="img/mar1.png" alt="Canon">
+                        <div class="camera-bottom">
+                            <span class="price">4 240 р</span>
+                            <span class="sale">5 400 р</span>
+                            <span class="discont">-10%</span>
+                            <h4>Canon EOS 5D Mark IV Body</h4>
+                            <div class="stars">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="reiting">26</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="canon_wrap">
+                    <div class="canon-card">
+                        <img src="img/cardcamera5.png" alt="Canon">
+                        <div class="canon-bottom">
+                            <span class="price">9 500 р </span>
+                            <span class="sale">10 000 р</span>
+                            <span class="discont">-5%</span>
+                            <h4>Зеркальный фотоаппарат Canon EOS 80D Body</h4>
+                            <div class="stars">
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="reiting">26</div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="label">
+        <div class="container">
+            <div>
+                <img src="svg/label.svg" alt="">
+                <img src="svg/label2.svg" alt="">
+                <img src="svg/label3.svg" alt="">
+                <img src="img/label1.png" alt="">
+                <img src="img/label2.png" alt="">
+                <img src="img/label6.png" alt="">
+                <img src="img/label7.png" alt="">
+                <img src="img/label3.png" alt="">
+                <img src="svg/penta.svg" alt="">
+                <img src="svg/r.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="canontype">
+        <div class="container">
+            <div id="canon-wrap">
+                <div class="canon-card">
+                    <img src="img/canonwhite.png" alt="Canon">
+                    <div class="canon-bottom">
+                        <span class="price">4 240 р</span>
+                        <span class="sale">5 400 р</span>
+                        <span class="discont">-10%</span>
+                        <h4>Canon EOS 5D Mark IV Body</h4>
+                        <div class="stars">
+                            <div class="reiting">26</div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>Показать еще</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <ul class="tools">
+                <li><a href="#">фотоаппараты</a></li>
+                <li><a href="#">объективы</a></li>
+                <li><a href="#">студийный свет</a></li>
+                <li><a href="#">аксессуары</a></li>
+                <li><a href="#">вспышки</a></li>
+                <li><a href="#">сумки</a></li>
+                <li><a href="#">печать</a></li>
+                <li><a href="#">гаджеты</a></li>
+            </ul>
+            <ul class="services">
+                <li><a href="#">фотомагазин</a></li>
+                <li><a href="#">фотопрокат</a></li>
+                <li><a href="#">трейд-ин</a></li>
+                <li><a href="#">доставка</a></li>
+                <li><a href="#">как купить?</a></li>
+                <li><a href="#">способы оплаты</a></li>
+                <li><a href="#">гарантия и возврат</a></li>
+                <li><a href="#">сертификаты</a></li>
+                <li><a href="#">скидки</a></li>
+            </ul>
+            <ul class="info">
+                <li><a href="#">о компании</a></li>
+                <li><a href="#">новости</a></li>
+                <li><a href="#">акции</a></li>
+                <li><a href="#">обзоры</a></li>
+                <li><a href="#">контакты</a></li>
+                <li><a href="#">вакансии</a></li>
+                <li><a href="#">партнеры</a></li>
+                <li><a href="#">отзывы</a></li>
+                <li><a href="#">карта сайта</a></li>
+            </ul>
+            <ul class="contact">
+                <li><a href="#">контактная информация</a></li>
+                <li><a href="tel:+375 29 100 10 10"> +375(29)1001010</a></li>
+                <li><a href="#"> г.Минск ул. Победителей д 3 пом 41</a></li>
+                <li><a href="#"> fotomagaz@gmail.com</a></li>
+
+                <div class="oplata">
+                    <h5>способы оплаты</h5>
+                    <img src="img/visa.png" alt="visa">
+                    <img src="img/mastercard.png" alt="mastercard">
+                    <img src="img/belcard.png" alt="belcard">
+                </div>
+            </ul>
+
+
+        </div>
+    </div>
+
+
+
+
+    <script>
+        var cameraWrap = document.getElementById("camera-wrap")
+        var str = "";
+        var cam = [
+            {
+                imgUrl: "img/camera1.png",
+                price: "4 240 р",
+                sale: "5 400 р",
+                discon: "-10%",
+                title: "Canon EOS 5D Mark IV Body"
+            },
+            {
+                imgUrl: "img/camera2.png",
+                price: "4 240 р",
+                sale: "5 400 р",
+                discon: "-10%",
+                title: "Canon EOS 5D Mark IV Body"
+            },
+            {
+                imgUrl: "img/camera3.png",
+                price: "4 240 р",
+                sale: "5 400 р",
+                discon: "-10%",
+                title: "Canon EOS 5D Mark IV Body"
+            }
+        ];
+        for (i = 0; i < cam.length; i++) {
+            var prod = cam[i]
+            str += ` <div class="card-camera">
+                    <img src="${prod.imgUrl}" alt="Canon">
+                    <div class="camera-bottom">
+                        <span class="price">${prod.price}</span>
+                        <span class="sale">${prod.sale}</span>
+                        <span class="discont">${prod.discon}</span>
+                        <h4>${prod.title}</h4>
+                        <div class="stars">
+                            <span class="reiting">26</span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                    </div>
+                </div>`
+        };
+        cameraWrap.innerHTML = str;
+
+
+        var canonWrap = document.getElementById("canon_wrap")
+        var str = "";
+        var can = [
+            {
+                imgUrl: "img/cardcamera5.png",
+                price: "9 500 р",
+                sale: "10 000 р",
+                discon: "-5%",
+                title: "Зеркальный фотоаппарат Canon EOS 80D Body",
+                reiting: "13"
+
+            },
+            {
+                imgUrl: "img/cardcamera6.png",
+                price: "9 500 р",
+                sale: "10 000 р",
+                discon: "-5%",
+                title: "Зеркальный фотоаппарат Canon EOS 80D Body",
+                reiting: "13"
+
+            },
+            {
+                imgUrl: "img/cardcamera7.png",
+                price: "9 500 р",
+                sale: "10 000 р",
+                discon: "-5%",
+                title: "Зеркальный фотоаппарат Canon EOS 80D Body",
+                reiting: "13"
+
+            }
+        ];
+        for (i = 0; i < can.length; i++) {
+            var card = can[i]
+            str += `  <div class="canon-card">
+                    <img src="${card.imgUrl}" alt="Canon">
+                    <div class="canon-bottom">
+                        <span class="price">${card.price}</span>
+                        <span class="sale">${card.sale}</span>
+                        <span class="discont">${card.discon}</span>
+                        <h4>${card.title}</h4>
+                        <div class="stars">
+                            <div class="reiting">${card.reiting}</div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+
+                    </div>
+                </div>`
+        };
+        canonWrap.innerHTML = str;
+
+        var canonWrap = document.getElementById("canon-wrap")
+        var str = "";
+        var canwhit = [
+            {
+                imgUrl: "img/canon1.png",
+                price: "9 500 р",
+                sale: "10 000 р",
+                discon: "-5%",
+                title: "Зеркальный фотоаппарат Canon EOS 80D Body",
+                reiting: "13"
+            },
+            {
+                imgUrl: "img/canon3.png",
+                price: "9 500 р",
+                sale: "10 000 р",
+                discon: "-5%",
+                title: "Зеркальный фотоаппарат Canon EOS 80D Body",
+                reiting: "13"
+            },
+            {
+                imgUrl: "img/canonwhite.png",
+                price: "9 500 р",
+                sale: "10 000 р",
+                discon: "-5%",
+                title: "Зеркальный фотоаппарат Canon EOS 80D Body",
+                reiting: "13"
+            }
+        ];
+        for (i = 0; i < canwhit.length; i++) {
+            var whit = canwhit[i];
+            str += ` <div class="canon-card">
+                    <img src="${whit.imgUrl}" alt="Canon">
+                    <div class="canon-bottom">
+                        <span class="price">${whit.price}</span>
+                        <span class="sale">${whit.sale}</span>
+                        <span class="discont">${whit.discon}</span>
+                        <h4>${whit.title}</h4>
+                        <div class="stars">
+                            <div class="reiting">${whit.reiting}</div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+
+                        </div>
+                    </div>
+                </div>`
+        };
+        canonWrap.innerHTML = str;
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

@@ -20,10 +20,10 @@
                 </select>
                 <div class="phone">
                     <ul>
-                        <li><a href="#">+375 (29) 7072788</a></li>
+                        <li><a href="tel:+375 (29) 707 27 88">+375 (29) 707 27 88</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#">+375 (33) 7072788</a></li>
+                        <li><a href="tel:+375 (33) 7072788">+375 (33) 7072788</a></li>
                     </ul>
                 </div>
 
@@ -36,7 +36,6 @@
                 <ul>
                     <li><a href="">Трейд-ин</a></li>
                 </ul>
-
 
             </div>
             <div class="header-bottom">
@@ -91,6 +90,7 @@
             </div>
         </div>
     </div>
+    <!-- hit -->
     <div class="hit">
         <div class="container">
             <h2>Хиты продаж</h2>
@@ -112,6 +112,101 @@
                     <h4>Canon PowerShot G7 X Mark II</h4>
                 </div>
             </div>
+
+        </div>
+    </div>
+    <!-- label -->
+    <div class="label">
+        <div class="container">
+            <button>Показать еще</button>
+            <div class="label-assort">
+                <img src="img/label1.png" alt="FUJIFILM">
+                <img src="img/label6.png" alt="Canon">
+                <img src="img/label7.png" alt="Canon">
+                <img src="img/label2.png" alt="Nikon">
+                <img src="img/label3.png" alt="SONY">
+                <img src="img/label4.png" alt="PENTA">
+
+            </div>
+
+        </div>
+    </div>
+    <!-- review -->
+    <div class="reviews">
+        <div class="container">
+            <h2>Обзоры</h2>
+            <div id="review-wrap">
+                <!-- <div class="review-card">
+                    <img src="img/review1.png" alt="Nikon">
+                    <h4>Nikon Z6 II — большой обзор<br> беззеркальной<br>
+                        фотокамеры</h4>
+
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- insta -->
+    <div class="instagram">
+        <div class="container">
+            <h2>Ищите нас в инстаграмм</h2>
+            <div id="instagram-wrap">
+                <!-- <div class="instagram-card">
+                    <img src="img/insta1.png" alt="foto">
+                </div> -->
+            </div>
+
+
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <ul class="tools">
+                <li><a href="#">фотоаппараты</a></li>
+                <li><a href="#">объективы</a></li>
+                <li><a href="#">студийный свет</a></li>
+                <li><a href="#">аксессуары</a></li>
+                <li><a href="#">вспышки</a></li>
+                <li><a href="#">сумки</a></li>
+                <li><a href="#">печать</a></li>
+                <li><a href="#">гаджеты</a></li>
+            </ul>
+            <ul class="services">
+                <li><a href="#">фотомагазин</a></li>
+                <li><a href="#">фотопрокат</a></li>
+                <li><a href="#">трейд-ин</a></li>
+                <li><a href="#">доставка</a></li>
+                <li><a href="#">как купить?</a></li>
+                <li><a href="#">способы оплаты</a></li>
+                <li><a href="#">гарантия и возврат</a></li>
+                <li><a href="#">сертификаты</a></li>
+                <li><a href="#">скидки</a></li>
+            </ul>
+            <ul class="info">
+                <li><a href="#">о компании</a></li>
+                <li><a href="#">новости</a></li>
+                <li><a href="#">акции</a></li>
+                <li><a href="#">обзоры</a></li>
+                <li><a href="#">контакты</a></li>
+                <li><a href="#">вакансии</a></li>
+                <li><a href="#">партнеры</a></li>
+                <li><a href="#">отзывы</a></li>
+                <li><a href="#">карта сайта</a></li>
+            </ul>
+            <ul class="contact">
+                <li><a href="#">контактная информация</a></li>
+                <li><a href="tel:+375 29 100 10 10"> +375(29)1001010</a></li>
+                <li><a href="#"> г.Минск ул. Победителей д 3 пом 41</a></li>
+                <li><a href="#"> fotomagaz@gmail.com</a></li>
+
+                <div class="oplata">
+                    <h5>способы оплаты</h5>
+                    <img src="img/visa.png" alt="visa">
+                    <img src="img/mastercard.png" alt="mastercard">
+                    <img src="img/belcard.png" alt="belcard">
+                </div>
+            </ul>
+
 
         </div>
     </div>
@@ -246,6 +341,67 @@
 
         };
         hitProduct.innerHTML = str;
+
+        var reviewWrap = document.getElementById("review-wrap")
+        var str = "";
+        var rew = [
+            {
+                imgUrl: "img/review1.png",
+                title: "Nikon Z6 II — большой обзор<br> беззеркальной<br>фотокамеры"
+
+            },
+            {
+                imgUrl: "img/review2.png",
+                title: "Zhiyun Crane 2S — новая легенда или незначительное обновление?"
+
+            },
+            {
+                imgUrl: "img/review3.png",
+                title: "6 лучших объективов Canon RF для видеосъемки"
+
+            }
+
+        ];
+
+        for (i = 0; i < rew.length; i++) {
+            var prod = rew[i]
+            str += ` <div class="review-card">
+                    <img src="${prod.imgUrl}" alt="Nikon">
+                    <h4>${prod.title}</h4>
+
+                </div>`
+        };
+        reviewWrap.innerHTML = str;
+
+        var instagramWrap = document.getElementById("instagram-wrap")
+        var str = "";
+        var insta = [
+            {
+                imgUrl: "img/insta1.png"
+            },
+            {
+                imgUrl: "img/insta2.png"
+            },
+            {
+                imgUrl: "img/insta4.png"
+            },
+            {
+                imgUrl: "img/insta5.png"
+            },
+            {
+                imgUrl: "img/insta6.png"
+            }
+        ];
+        for (i = 0; i < insta.length; i++) {
+            var foto = insta[i]
+            str += ` <div class="instagram-card">
+                    <img src="${foto.imgUrl}" alt="foto">
+                </div>`
+        };
+        instagramWrap.innerHTML = str;
+
+
+
 
 
 
