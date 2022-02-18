@@ -10,6 +10,7 @@
 body{
     font-family: 'Noto Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 .clearfix::after{
 content: "";
@@ -92,25 +93,32 @@ float: left;
 }
 .heider-search div.seach { 
     float: left;
-    background: #F9F9F9;
-    border-radius: 8px;
-    width: 702.54px;
-    height: 52px;
+    position: relative;
     margin-top: 51px;
     margin-left: 9px;
 }
 .heider-search div.seach img[alt="search"]{
     margin-left: 12px;
     margin-top: 13px;
+    position: absolute;
+    left: 660px;
+
 }
-.heider-search div.seach span{
+.heider-search div.seach input{
     font-family:'Roboto', sans-serif; ;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    vertical-align: 10px;
-    margin-left: 16px;
+    border:transparent;
+    background: #F9F9F9;
+    border-radius: 8px;
+    width: 702.54px;
+    height: 52px;
+    padding-left: 10px;
+   
+   
+ 
 }
 .heider-search button{
     float: right;

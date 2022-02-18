@@ -1,0 +1,84 @@
+@media all and (max-width:1008px){
+    .container{
+        width: 800px;
+    }
+    
+
+.heider-top ul.heider-top-menu li{
+        margin-right: 0px;
+        margin-left: 26px;
+    }
+    ul.heider-top-icon {
+        margin-right: 119px;
+        
+    }
+    ul.heider-top-icon li {
+        margin-right: 3px;
+    }
+    .phone {
+        float: left;
+        margin-left: 13px;
+    }
+    
+
+.heider-search img[alt="humb"]{
+    margin-right: 0px;
+}
+.heider-search div.seach{
+    margin-left: 0px;
+}
+.heider-search button:last-child{
+    margin-left: 0px;
+}
+    
+    .heider-search img[alt="Logo"]{
+        margin-right: 0px;
+        display: block;
+    }
+    
+
+.heider-search div.seach {
+    display: block;
+    float: none;
+    margin-left: 9px;
+}
+   
+    .heider-search div.seach div input{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+   
+    }
+    .heider-search button{
+        float: none;
+        display: inline-block;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .heider-bottom-menu{
+        display: block;
+        margin-left: 0px;
+    }
+    .catalog-item {
+        width: 226px;
+    }
+    .filter{
+        margin-right: 3px;
+        width: 168px;
+        font-size: 14px;
+    }
+    .filters-wrap ul li {
+        margin-right: 7px;
+        font-size: 13px;
+    }
+    .filter img{
+        margin-left: 18px;
+    }
+
+
+}
+@media all and (max-width:930px) {
+    .container{
+        width: 930px;
+    }
+}

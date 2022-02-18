@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Project4</title>
 </head>
@@ -13,10 +14,16 @@
     <div class="header">
         <div class="container">
             <div class="header-top">
+
                 <select>
                     <option value="minck">Минск</option>
+                    <option value="mogilev">Могилев</option>
+                    <option value="vitebsk">Витебск</option>
+                    <option value="Grodno">Гродно</option>
+
                 </select>
                 <div class="phone">
+
                     <ul>
                         <li><a href="tel:+375 (29) 707 27 88">+375 (29) 707 27 88</a></li>
                     </ul>
@@ -38,18 +45,29 @@
             </div>
             <div class="header-bottom">
                 <button class="cat">Категории</button>
-                <span>Photomarket</span>
+                <div>Photomarket</div>
                 <input type="button" value="Я ищу.." class="search">
+
                 <div class="auth">
+                    <div class="picture">
+                        <span><i class="fa-solid fa-location-pin"></i></span>
+                        <span><i class="fa-solid fa-user-check"></i></span>
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+
                     <ul>
                         <li>
+
+
                             <a href="#">Адрес</a>
                         </li>
                     </ul>
 
                     <ul>
+
                         <li><a href="#">Войти</a></li>
                     </ul>
+
                     <ul>
                         <li><a href="#">Корзина</a></li>
                     </ul>
@@ -75,8 +93,15 @@
                         <div>
                             <h4>Зеркальный фотоаппарат Canon <br> EOS 5D Mark IV Body</h4>
                         </div>
+
+                        <div><i class="fa-solid fa-circle-xmark"></i></div>
+                        <button id="minus">-</button>
+                        <p id="res"></p><br>
+                        <button id="plus">+</button>
                         <div class="ost">Осталось 2 шт</div>
                         <div class="price">
+
+
                             <span>4 240 р</span><br>
                             <span>5 400 р</span>
                         </div>
@@ -122,9 +147,9 @@
                         <label>
                             <input type="email" name="fio[]" placeholder="email" maxlength="20">
                         </label><br>
-                        <label for="check">
-                            <input type="checkbox" name="check[]" checked id="check">
-                        </label>
+
+                        <input type="checkbox" name="check[]" checked id="check">
+                        <label for="check" class="yelow"></label>
                         <span class="last">Получать эксклюзивные скидки в SMS-рассылке от Photomarket</span>
 
 
@@ -222,6 +247,37 @@
 
         </div>
     </div>
+    <script>
+        var minus = document.getElementById("minus");
+        var plus = document.getElementById("plus");
+        var res = document.getElementById("res");
+
+        let count = 0;
+        minus.addEventListener(`click`, () => {
+            count--;
+            if (count <= 0) {
+                return;
+            }
+            render();
+
+        });
+
+        function res() {
+            res.innerHTML = count - ``;
+
+        };
+        plus.addEventListener(`click`, () => {
+            count++;
+            render();
+        });
+
+        function render() {
+            res.innerHTML = count + ``;
+
+        };
+
+
+    </script>
 
 </body>
 
