@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="font/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="media/media.css">
 
@@ -77,17 +80,57 @@
                 </div>
 
             </div>
+
         </div>
     </div>
     <!-- slider -->
     <div class="slider">
         <div class="container">
 
-            <h1>Шедевры в деталях вместе с Nikon </h1>
-            <p>Представляем совершенно новую фотокамеру Z 7II.</p>
-            <!-- <span><i class="fa-solid fa-greater-than"></i></span> -->
-            <!-- <input type="button" value="Узнать больше"> -->
-            <button>Узнать больше</button>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <h1>Шедевры в деталях вместе с Nikon </h1>
+                        <p>Представляем совершенно новую фотокамеру Z 7II.</p>
+
+                        <button>Узнать больше</button>
+
+                    </div>
+                    <div class="carousel-item">
+
+                    </div>
+                    <div class="carousel-item">
+
+                    </div>
+                    <div class="carousel-item">
+
+
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
 
         </div>
     </div>
@@ -95,8 +138,7 @@
     <div class="assort">
         <div class="container">
             <div id="assort-wrap">
-
-                <!-- <div class="assort">
+                <div class="assort">
                     <div class=" assort-top">
                         <h3>Canon EOS 5D <br>
                             Mark IV Body
@@ -104,43 +146,39 @@
 
                         <span class="price">4 240р</span>
                     </div>
+                    <div class="procent">10%</div>
                     <div>
                         <img src="img/nikon.png" alt="mark">
                     </div>
-                </div> -->
 
+                </div>
             </div>
-            <div class="procent">10%</div>
-            <div class="procent2">20%</div>
-            <div class="procent">10%</div>
-
         </div>
-
     </div>
     <!-- hit -->
     <div class="hit">
         <div class="container">
             <h2>Хиты продаж</h2>
-
             <div id="hit-wrap">
-                <!-- <div class="hit-card">
+                <div class="hit-card">
                     <img src="img/mar1.png" alt="Canon">
                     <div>
                         <span class="price">4 240 р </span>
                         <span class="sale">5 400 р</span>
                     </div>
                     <h4>Canon EOS 5D Mark IV Body</h4>
-                </div> -->
+                </div>
             </div>
             <div id="hit-product">
                 <div class="product-wrap">
-
                     <img src="img/mar6.png" alt="g7x">
-                    <span class="price">2 400 р</span>
+                    <div class="cent">
+                        <span class="price">2 400 р</span>
+                        <span class="sale">5 400 р</span>
+                    </div>
                     <h4>Canon PowerShot G7 X Mark II</h4>
                 </div>
             </div>
-
         </div>
     </div>
     <!-- label -->
@@ -149,8 +187,7 @@
             <button>Показать еще</button>
             <div class="label-assort">
                 <img src="img/label1.png" alt="FUJIFILM">
-                <img src="img/label6.png" alt="Canon">
-                <img src="img/label7.png" alt="Canon">
+                <img src="img/label16.png" alt="Canon">
                 <img src="img/label2.png" alt="Nikon">
                 <img src="img/label3.png" alt="SONY">
                 <img src="img/label4.png" alt="PENTA">
@@ -164,12 +201,12 @@
         <div class="container">
             <h2>Обзоры</h2>
             <div id="review-wrap">
-                <!-- <div class="review-card">
+                <div class="review-card">
                     <img src="img/review1.png" alt="Nikon">
                     <h4>Nikon Z6 II — большой обзор<br> беззеркальной<br>
                         фотокамеры</h4>
 
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
@@ -239,8 +276,12 @@
         </div>
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
     <script>
+
         var assortWrap = document.getElementById("assort-wrap")
         var str = "";
 
@@ -249,16 +290,19 @@
                 imgUrl: "img/mark.png",
                 title: "Canon EOS 5D <br>Mark IV Body",
                 price: "4 240р",
+                procent: "10%"
             },
             {
                 imgUrl: "img/m200.png",
                 title: "Canon EO<br> M200 Kity",
                 price: "1 100р",
+                procent: "20%"
             },
             {
                 imgUrl: "img/nikon.png",
                 title: "Nikon 85m f/1.4G <br> AF-S Nikkor",
                 price: "4 240р",
+                procent: "30%"
             }
         ];
 
@@ -270,9 +314,11 @@
 
                         <span class="price">${item.price}</span>
                     </div>
+                    <div class="procent">${item.procent}</div>
                     <div>
                         <img src="${item.imgUrl}" alt="mark">
                     </div>
+                    
                 </div>`;
         }
         assortWrap.innerHTML = str;
@@ -336,26 +382,31 @@
             {
                 imgUrl: "img/mar6.png",
                 price: "2 400 р",
+                sale: "5400 p",
                 title: "Canon PowerShot G7 X Mark II"
             },
             {
                 imgUrl: "img/mar7.png",
                 price: "2 400 р",
+                sale: "5400 p",
                 title: "Canon PowerShot G7 X Mark II"
             },
             {
                 imgUrl: "img/mar8.png",
                 price: "2 400 р",
+                sale: "5400 p",
                 title: "Canon PowerShot G7 X Mark II"
             },
             {
                 imgUrl: "img/mar9.png",
                 price: "2 400 р",
+                sale: "5400 p",
                 title: "Canon PowerShot G7 X Mark II"
             },
             {
                 imgUrl: "img/mar10.png",
                 price: "2 400 р",
+                sale: "5400 p",
                 title: "Canon PowerShot G7 X Mark II"
             }
         ];
@@ -363,7 +414,10 @@
             var item = prod[i];
             str += `<div class="product-wrap">
                         <img src="${item.imgUrl}" alt="g7x">
-                        <span class="price">${item.price}</span>
+                        <div class="cent">
+                            <span class="price">${item.price}</span>
+                            <span class="sale">${item.sale}</span>
+                        </div>
                         <h4>${item.title}</h4>
                 </div>`;
 

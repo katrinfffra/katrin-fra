@@ -1,0 +1,42 @@
+@media all and (max-width:1194px){
+    .container{
+        width: 960px;
+    }
+    .header .container .header-top select{
+        margin-left: 30px;
+    }
+    .header .container .header-top .phone {
+        
+        margin-right: 69px;
+    }
+    .header .container .header-top ul {
+        padding-left: 0px;
+    }
+    .header .container .header-bottom .cat {
+        font-size: 16px;
+        margin-left: 30px;
+        margin-top: 37px;
+    }
+    
+
+    .header .container .header-bottom .search {
+        margin-left: 37px;
+    }
+    .fotobuy .container .itog .result{
+        flex-basis: 270px;
+        width: 270px;
+    }
+    .fotobuy .container .itog .wrap {
+        width:670px ;
+        flex-basis: 670px;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy div i {
+        top: -41px;
+        left: 216px;
+    }
+
+    
+        
+
+
+}

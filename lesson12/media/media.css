@@ -1,88 +1,277 @@
-@media all and (max-width:1180px){
-    body{
-        overflow-x: hidden;
+@media all and (max-width:1194px){
+   
+    .container{
+        width: 960px;
     }
-    .conteiner{
-        width: 900px;
+    .header .container .header-top select{
+        margin-left: 30px;
     }
     .header .container .header-top .phone {
-        margin-left: 28px;
-        margin-right: 37px;
-    }
-    .header .container .header-bottom .cat{
-        margin-left: 63px;
-        margin-right: 8px;
-    }
-    .header .container .header-bottom .search{
-        margin-left: 0px;
-    }
-    .header .container .header-bottom .auth{
-        margin-right: 171px;
-    }
-    .header .container .header-bottom .auth ul li{
-        margin-right: 32px;
-    }
-    .header .container .header-bottom .auth .picture span:nth-child(2){
-        left: 76px;
-    }
-    .header .container .header-bottom .auth .picture span:first-child  {
-        left: 6px;
-    }
-    .header .container .header-bottom .auth .picture span:last-child{
-        left: 146px;
-    }
-    .assort .container #assort-wrap {
         
-        justify-content: center;
-        margin-left: 0px;
+        margin-right: 69px;
+    }
+    .header .container .header-top ul {
+        padding-left: 0px;
+    }
+    .header .container .header-bottom .cat {
+        font-size: 16px;
+        margin-left: 30px;
+        margin-top: 37px;
+    }
+    
+
+    .header .container .header-bottom .search {
+        margin-left: 37px;
+    }
+    .slider h1 {
+        padding-left: 100px;
+    }
+    .carousel.pointer-event{
+        padding: 20px;
+    }
+    .assort .container #assort-wrap{
+        margin: 80px 5px;
     }
     .assort .container #assort-wrap .assort{
-        width: 300px;
+        flex-basis: 270px;
+        /* flex-shrink: 0px;
+        flex-grow: 0px; */
     }
-    .assort .container #assort-wrap .assort:first-child{
-        margin-right: 20px;
-    }
-    .assort .container #assort-wrap .assort:nth-child(2){
-        margin-right: 20px;
-    }
-    .hit .container #hit-wrap {
-       flex-wrap: wrap;
-       gap: 30px;
-    }
-    
-
-    
-
-.hit .container #hit-wrap .hit-card{
-    margin-right: 0px;
-    margin-left: 0px;
-    width: 320px;
-
-}
-    .reviews .container #review-wrap{
-        justify-content: center;
-        margin-left: 0px;;
-    }
-    .reviews .container #review-wrap .review-card{
-        margin-right: 20px;
-    }
-    .instagram .container #instagram-wrap{
-        justify-content: center;
+    .hit .container h2 {
         margin-left: 0px;
     }
-    .instagram .container #instagram-wrap .instagram-card{
-        margin-right: 20px;
+    .hit .container #hit-wrap {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0px 20px
     }
-    .footer.container ul{
-        
+    .hit .container #hit-wrap .hit-card {
+       flex-basis: 270px;
+      
+    }
+    .hit .container #hit-wrap .hit-card img{
+        padding: 30px 50px;
+    }
+    .hit .container #hit-product{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0px 20px
+    }
+    .hit .container #hit-product .product-wrap{
+        flex-basis: 270px;
+    }
+    .hit .container #hit-product .product-wrap img{
+        padding: 30px 50px;
+    }
+    .label .container button{
+        margin: 40px auto;
+    }
+    .label .container .label-assort img{
+        width: 165px;
+        height: 35px;
+    }
+    .reviews .container h2{
+        margin-left: 0px;
+    }
+    .reviews .container #review-wrap {
+        justify-content: space-between;
+        margin: 0px;
+    }
+    .reviews .container #review-wrap .review-card{
+        width: 300px;
     }
     
-    .footer.container.contact{
-        padding-right: 92px;
+    .reviews .container #review-wrap .review-card:first-child{
+        margin-right: 0px;
     }
+    .reviews .container #review-wrap .review-card:nth-child(2) {
+        margin-right: 0px;
+    }
+    .reviews .container #review-wrap .review-card img{
+        width: 290px;
+    }
+    .instagram .container h2 {
+        margin-left: 0px;
+    }
+    .instagram .container #instagram-wrap{
+       margin: 39px 0px;
+    }
+    .instagram .container #instagram-wrap .instagram-card img{
+        width: 170px;
     }
 
+
+
+
+
+}
+@media all and (max-width:994px) {
+    .container{ 
+        width: 590px;
+    }
+    .header .container{
+        height: 343px;
+    }
+    .header .container .header-top select{
+       display: none;
+    }
+    .header .container .header-top {
+        display: block;
+    }
+    .header .container .header-top .phone ul{
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+    .header .container .header-top ul {
+       display: none;
+    }
+    .header .container .header-bottom {
+        display: block;
+
+    }
+    .header .container .header-bottom .cat{
+        margin: 35px auto;
+    }
+        
+    
+    .header .container .header-bottom div {
+        margin-top: 20px;
+        margin-left: 88px;
+    }
+    .header .container .header-bottom .search{
+        margin-top: 24px;
+        margin-left: 88px;
+      
+    }
+    .header .container .header-bottom div{
+        display: block;
+    }
+    .header .container .header-bottom .auth .picture{
+        margin-top: 50px;
+    }
+    .header .container .header-bottom .auth .picture span:first-child{
+        left: 107px;
+    }
+    .header .container .header-bottom .auth .picture span:nth-child(2){
+        left: 235px;
+    }
+    .header .container .header-bottom .auth .picture span:last-child{
+        left: 366px;
+    }
+    .assort .container #assort-wrap{
+        margin: 88px 0px;
+    }
+    .assort .container #assort-wrap .assort{
+        flex-basis: 180px;
+        margin-right: 4px;
+    }
+    .assort .container #assort-wrap .assort .assort-top {
+        flex-direction: column;
+    }
+    .assort .container #assort-wrap .assort .assort-top h3{
+        margin-left: 0px;
+        
+    }
+    .assort .container #assort-wrap .assort div img{
+        width: 120px;
+    }
+    .assort .container #assort-wrap .assort .assort-top h3{
+        margin-left: 0px;
+        
+    }
+    .hit .container #hit-wrap .hit-card{
+        flex-basis: 230px;
+    }
+    .hit .container #hit-product .product-wrap{
+        flex-basis: 230px;
+    }
+    .label .container .label-assort img {
+        width: 108px;
+        height: 26px;
+        margin-top: 34px;
+    }
+    .reviews .container h2{
+        text-align: left;
+    }
+    .reviews .container #review-wrap {
+        display: block;
+        
+    }
+    .instagram .container h2{
+        margin-top: 0px;
+    }
+    
+    .instagram .container #instagram-wrap{
+        display: block;
+        margin-top: 38px;
+    }
+    .instagram .container #instagram-wrap.instagram-card{
+        margin-bottom: 20px;
+    }
+    .instagram .container #instagram-wrap .instagram-card img {
+        margin-bottom: 10px;
+    }
+    
+
    
-   
+}
+@media all and (max-width:772px){
+    .container{
+        width: 310px;
+    }
+    .header .container .header-bottom div{
+        margin: 10px 10px;
+        text-align: center;
+    }
+    .header .container .header-bottom .search {
+        margin: 24px auto;
+        width: 270px;
+    }
+    
+    .header .container .header-bottom .auth .picture {
+        margin-left:0px ;
+    }
+    .header .container .header-bottom .auth .picture span:first-child{
+        left: 50px;
+    }
+    .header .container .header-bottom .auth .picture span:nth-child(2) {
+        left: 126px;
+    }
+    header .container .header-bottom .auth .picture span:last-child {
+        left: 199px;
+    }
+    .slider h1 {
+        padding-left: 10px;
+        padding-top: 20px;
+    }
+    .slider p{
+        padding-left: 10px;
+    }
+    .assort .container{
+        height: 676px;
+    }
+    .assort .container #assort-wrap {
+        margin: 20px 0px;
+        display: block;
+    }
+    .assort .container #assort-wrap .assort{
+        height: 212px;
+        margin-bottom: 10px;
+    }
+    .assort .container #assort-wrap .assort .assort-top{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+    }
+    .assort .container #assort-wrap .assort .assort-top h3{
+        margin: 0px;
+    }
+    .assort .container #assort-wrap .assort .assort-top span{
+        margin: 0px;
+    }
+    .label{
+        display: none;
+    }
+
 
 }

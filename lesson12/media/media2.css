@@ -1,0 +1,231 @@
+@media all and (max-width:1120px){
+    .container{
+        width: 930px;
+    }
+    .header .container .header-top select{
+        margin-left: 30px;
+    }
+    .header .container .header-top .phone {
+        
+        margin-right: 69px;
+    }
+    .header .container .header-top ul {
+        padding-left: 0px;
+    }
+    .header .container .header-bottom .cat {
+        font-size: 16px;
+        margin-left: 30px;
+        margin-top: 37px;
+    }
+    .header .container .header-bottom .search {
+        margin-left: 37px;
+    }
+    .catalog .container .catalog-breadcrumbs ul{
+        padding-top: 13px;
+    }
+    .catalog .container .catalog-sort .select{
+        margin-right: 50px;
+    }
+    
+    .main .container .foto-camera #camera-wrap {
+        justify-content: space-between;
+        
+    }
+    .main .container .foto-camera{
+        width: 723px;
+    }
+    .main .container .foto-camera #camera-wrap .card-camera{
+        flex-basis: 240px;
+    }
+    .main .container .foto-camera #camera-wrap .card-camera img{
+        margin: 30px 19px;
+    }
+    .main .container .foto-camera #camera-wrap .card-camera .camera-bottom {
+        margin-top: 37px;
+    }
+    .main .container .foto-camera #canon_wrap {
+        justify-content: space-between;
+    }
+    .main .container .foto-camera #canon_wrap .canon-card{
+        flex-basis: 240px;
+    }
+    .main .container .foto-camera #canon_wrap .canon-card img{
+        margin: 40px 6px;
+    }
+    .label .container div img{
+        width: 125px;
+        height: 25px;
+    }
+    .canontype .container #canon-wrap{
+        margin-left: 0px;
+        justify-content: space-between;
+    }
+    .canontype .container #canon-wrap .canon-card{
+        flex-basis: 250px;
+    }
+    .canontype .container #canon-wrap .canon-card img{
+        padding-left: 0px;
+    }
+
+}
+@media all and (max-width:930px){
+    .container{
+        width: 560px;
+    }
+    .header .container{
+        height: 343px;
+    }
+    .header .container .header-top select{
+       display: none;
+    }
+    .header .container .header-top {
+        display: block;
+    }
+    .header .container .header-top .phone ul{
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+    .header .container .header-top ul {
+       display: none;
+    }
+    .header .container .header-bottom {
+        display: block;
+
+    }
+    .header .container .header-bottom .cat{
+        margin: 35px auto;
+    }
+        
+    
+    .header .container .header-bottom div {
+        margin-top: 20px;
+        margin-left: 88px;
+    }
+    .header .container .header-bottom .search{
+        margin-top: 24px;
+        margin-left: 88px;
+      
+    }
+    .header .container .header-bottom div{
+        display: block;
+    }
+    .header .container .header-bottom .auth .picture{
+        margin-top: 50px;
+    }
+    .header .container .header-bottom .auth-two .picture-two span:first-child{
+        top: -41px;
+        left: 67px;
+    }
+    .header .container .header-bottom .auth-two .picture-two span:nth-child(2){
+        top: -42px;
+        left: 193px;
+    }
+    .header .container .header-bottom .auth-two .picture-two span:last-child{
+        top: -39px;
+        left: 333px;
+    }
+    .catalog .container .catalog-sort{
+        display: block;
+        margin-left: 0px;
+        margin-top: 19px;
+    }
+    .catalog .container .catalog-sort .select {
+        justify-content: center;
+
+    }
+    .catalog .container .catalog-sort .number{
+        justify-content: center;
+        margin-top: 19px;
+    }
+    .main .container{
+        display: block;
+    }
+    .main .container .foto-camera #camera-wrap {
+      flex-wrap: wrap;
+      width: 560px;
+        
+    }
+    .main .container .foto-camera #camera-wrap .card-camera{
+        flex-basis: 260px;
+       margin: 10px 5px;
+    }
+    .main .container .foto-camera #canon_wrap{
+        flex-wrap: wrap;
+        width: 560px;
+    }
+    .main .container .foto-camera #canon_wrap .canon-card{
+        flex-basis: 260px;
+        margin: 10px 5px;
+    }
+    .label .container div img{
+        width: 105px;
+    }
+    .canontype .container #canon-wrap{
+        width: 560px;
+        flex-wrap: wrap;
+    }
+    .canontype .container #canon-wrap .canon-card{
+        flex-basis: 240px;
+        margin: 10px 10px;
+    }
+       
+
+}
+@media all and (max-width:735px){
+    .container{
+        width: 320px;
+    }
+    .header .container .header-bottom .search{
+        width: 200px;
+        margin-left: 65px;
+    }
+    .header .container .header-bottom .auth-two .picture-two span:first-child{
+        left: 12px;
+    }
+    .header .container .header-bottom .auth-two .picture-two span:nth-child(2){
+        left: 79px;
+    }
+    .header .container .header-bottom .auth-two .picture-two span:last-child{
+        left: 156px;
+    }
+    .catalog .container .catalog-breadcrumbs ul{
+        display: block;
+       
+    }
+    .catalog .container .catalog-breadcrumbs ul li:nth-child(2):before{
+        left: -5px;
+    }
+    .catalog .container .catalog-breadcrumbs ul li:last-child:before{
+        left: -5px;
+    }
+    .catalog .container .catalog-sort{
+        margin: 19px 31px;
+    }
+    .catalog .container .catalog-sort .select{
+        display: block;
+    }
+    .main .container .foto-camera #camera-wrap{
+        width: 320px;
+    }
+    .main .container .foto-camera #canon_wrap{
+        width: 320px;
+    }
+    .label .container div{
+        display: block;
+        text-align: center;
+    }
+    .label .container div img {
+        width: 161px;
+        height: 28px;
+        margin-bottom: 10px;
+    }
+    .canontype .container #canon-wrap {
+        display: block;
+        width: 320px;
+    }
+
+}
+
+
+
+

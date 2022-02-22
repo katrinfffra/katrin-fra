@@ -1,0 +1,220 @@
+@media all and (max-width:1120px){
+    .container{
+        width: 930px;
+    }
+    .header .container .header-top select{
+        margin-left: 30px;
+    }
+    .header .container .header-top .phone {
+        
+        margin-right: 69px;
+    }
+    .header .container .header-top ul {
+        padding-left: 0px;
+    }
+    .header .container .header-bottom .cat {
+        font-size: 16px;
+        margin-left: 30px;
+        margin-top: 37px;
+    }
+    .header .container .header-bottom .search {
+        margin-left: 37px;
+    }
+    .specification .container .button{
+        margin-right: 464px;
+    }
+    .request .container h2{
+        margin-left: 0px;
+    }
+    .request .container #request-wrap {
+        width: 930px;
+        flex-wrap: wrap;
+    }
+    .request .container #request-wrap .request-card {
+        flex-basis: 200px;
+    }
+    .specification .container .characterization h3 {
+        margin-left: 127px;
+    }
+
+
+
+}
+@media all and (max-width:945px){
+    .container{
+        width: 560px;
+    }
+    .header .container{
+        height: 343px;
+    }
+    .header .container .header-top select{
+       display: none;
+    }
+    .header .container .header-top {
+        display: block;
+    }
+    .header .container .header-top .phone ul{
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+    .header .container .header-top ul {
+       display: none;
+    }
+    .header .container .header-bottom {
+        display: block;
+
+    }
+    .header .container .header-bottom .cat{
+        margin: 35px auto;
+    }
+        
+    
+    .header .container .header-bottom div {
+        margin-top: 20px;
+        margin-left: 88px;
+    }
+    .header .container .header-bottom .search{
+        margin-top: 24px;
+        margin-left: 88px;
+      
+    }
+    .header .container .header-bottom div{
+        display: block;
+    }
+    .header .container .header-bottom .auth .picture{
+        margin-top: 50px;
+    }
+    .header .container .header-bottom .auth-two .picture-two span:first-child{
+        top: -41px;
+        left: 67px;
+    }
+    .header .container .header-bottom .auth-two .picture-two span:nth-child(2){
+        top: -42px;
+        left: 193px;
+    }
+    .header .container .header-bottom .auth-two .picture-two span:last-child{
+        top: -39px;
+        left: 333px;
+    }
+    .catalog .container .catalog-breadcrumbs ul{
+       padding-top: 13px;
+        display: block;
+    }
+    .catalog .container .catalog-breadcrumbs ul li{
+        margin-top: 10px;
+    }
+    .catalog .container .catalog-breadcrumbs ul li:nth-child(2):before {
+        left: -5px;
+    }
+    .catalog .container .catalog-breadcrumbs ul li:nth-child(3):before{
+        left: -5px;
+    }
+    .catalog .container .catalog-breadcrumbs ul li:last-child:before{
+        left: -5px;
+    }
+    .product .container .main {
+        flex-wrap: wrap;
+    }
+    .product .container .main .card{
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    .specification .container .button{
+        margin: 0px 10px;
+       
+    }
+    .specification .container .button button{
+        width: 180px;
+    }
+    
+    .specification .container .characterization h3 {
+        margin-left: 33px;
+    }
+    .specification .container .characterization .major{
+        width: 555px;
+        margin-left: 0px;
+    }
+    .specification .container .characterization .major .property {
+        margin-left: 30px;
+    }
+    .specification .container .characterization .color{
+        width: 555px;
+        margin-left: 0px;
+    }
+    .specification .container .characterization .color .mater{
+        margin-left: 30px;
+    }
+    .request .container #request-wrap{
+        width: 560px;
+        flex-wrap: wrap;
+        
+    }
+
+
+}
+ @media all and (max-width:600px){
+     .container{
+         width: 320px;
+        }
+        .header .container .header-bottom .search{
+            width: 200px;
+            margin-left: 65px;
+        }
+        .header .container .header-bottom .auth-two .picture-two span:first-child{
+            left: 12px;
+        }
+        .header .container .header-bottom .auth-two .picture-two span:nth-child(2){
+            left: 79px;
+        }
+        .header .container .header-bottom .auth-two .picture-two span:last-child{
+            left: 156px;
+        }
+        
+        .catalog .container .catalog-breadcrumbs h2{
+            margin-left: 0px;
+            text-align: center;
+            font-size: 22px;
+        }
+        .catalog .container .catalog-breadcrumbs .stars{
+            margin-left: 0px;
+        }
+        .catalog .container .catalog-breadcrumbs .stars div:last-child{
+            margin-right: 0px;
+        }
+        .product .container .main {
+            flex-wrap: wrap;
+        }
+        .product .container .main .general-product img{
+            width: 180px;
+        }
+        .product .container .main .general-product{
+            align-self: center;
+        }
+        .specification .container .button{
+            margin: 0px 5px;
+
+        }
+        .specification .container .button button{
+            width: 170px;
+            font-size: 14px;
+    
+        }
+        
+        .specification .container div.characterization  div:last-child{
+            margin-left: 10px;
+        }
+        .request .container h2{
+            margin-top: 10px;
+            font-size: 22px;
+        }
+        .request .container #request-wrap{
+            display: block;
+            width: 320px;
+        }
+        .request .container #request-wrap .request-card{
+            margin-bottom: 10px;
+        }
+
+
+
+ }
