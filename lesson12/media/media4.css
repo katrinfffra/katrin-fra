@@ -1,4 +1,5 @@
-@media all and (max-width:1194px){
+
+@media all and (max-width:1306px){
     .container{
         width: 960px;
     }
@@ -17,26 +18,367 @@
         margin-left: 30px;
         margin-top: 37px;
     }
-    
 
     .header .container .header-bottom .search {
         margin-left: 37px;
     }
-    .fotobuy .container .itog .result{
-        flex-basis: 270px;
-        width: 270px;
+    .fotobuy .container .itog .wrap .wrap-buy{
+        flex-wrap: wrap;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy img{
+        margin: 30px 0px;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy{
+        flex-basis: 100px;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy:nth-child(2){
+        flex-basis: 268px;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy h4{
+        font-size: 14px;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy #minus {
+        width: 30px;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy #plus{
+        width: 30px;
+    } 
+    .fotobuy .container .itog .wrap .wrap-buy div.price{
+        width: 105px;
+    }
+    .fotobuy .container .itog .wrap .result{
+        flex-basis: 200px;
+    }
+
+   
+    
+   
+}
+@media all and  (max-width:976px){
+    .container{
+        width: 560px;
+    }
+    .header .container{
+        height: 343px;
+    }
+    .header .container .header-top select{
+       display: none;
+    }
+    .header .container .header-top {
+        display: block;
+    }
+    .header .container .header-top .phone ul{
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+    .header .container .header-top ul {
+       display: none;
+    }
+    .header .container .header-bottom {
+        display: block;
+
+    }
+    .header .container .header-bottom .cat{
+        margin: 35px auto;
+    }
+     
+    .header .container .header-bottom div {
+        margin-top: 20px;
+        margin-left: 88px;
+    }
+    .header .container .header-bottom .search{
+        margin-top: 24px;
+        margin-left: 88px;
+      
+    }
+    .header .container .header-bottom div{
+        display: block;
+    }
+    .header .container .header-bottom .auth .picture{
+        margin-top: 50px;
+    }
+    .header .container .header-bottom .auth-two .picture-two span:first-child{
+        top: -41px;
+        left: 67px;
+    }
+    .header .container .header-bottom .auth-two .picture-two span:nth-child(2){
+        top: -42px;
+        left: 193px;
+    }
+   
+    .header .container .header-bottom .auth-two .picture-two span:last-child{
+        top: -39px;
+        left: 333px;
     }
     .fotobuy .container .itog .wrap {
-        width:670px ;
-        flex-basis: 670px;
+        display: block;
     }
-    .fotobuy .container .itog .wrap .wrap-buy div i {
-        top: -41px;
-        left: 216px;
+    .fotobuy .container .itog ul{
+        margin-top: 13px;
+        margin-left: 8px;
+    }
+    .fotobuy .container .itog h2{
+        margin-top: 2px;
+        margin-left: 8px;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy{
+        justify-content: space-around;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy img {
+        width: 78px;
+        text-align: center;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy h4 {
+        font-size: 16px;
+        margin-top: 45px;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy div.price{
+       
+        font-size: 22px;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy div i{
+        font-size: 22px;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy div:nth-child(4){
+       justify-content: flex-start;
+    }
+    .fotobuy .container .itog .wrap .result{
+        /* height: 311px; */
+        margin: 0px auto;
+        width: 450px;
+    }
+    .fotobuy .container .itog .wrap .result .lefright{
+        padding-top: 15px;
+    }
+    .fotobuy .container .itog .wrap .result button#red{
+        margin: 44px auto;
+        width: 313px;
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    .fotobuy .container .itog .wrap .result .rule{
+        margin: 0px;
+        text-align: center;
+    }
+    .fotobuy .container .itog .wrap .result .rule span{
+        font-size: 12px;
+    }
+    .fotobuy .container .itog .wrap .result .dost{
+        text-align: center;
+    }
+    .fotobuy .container .dostavka h2 {
+        margin-top: 10px;
+    }
+    .fotobuy .container .dostavka input{
+        width: 254px;
+    }
+    
+    .fotobuy .container .oplata input{
+        width: 254px;
+    }
+    .fotobuy .container .dannye input{
+        width: 254px;
+    }
+    .fotobuy .container .dannye span{
+        display: inline-block;
+        text-align: justify;
+        font-size: 14px;
+    }
+    .fotobuy .container .dannye #sub {
+        width: 70px;
+        margin-left: 5px;
+    }
+    .footer .container {
+        flex-wrap: wrap;
+        height: 662px;
+    }
+    .footer .container>ul.contact li{
+        margin-bottom: 4px;
+    }
+    .footer .container>ul.contact li:first-child{
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    .footer .container .tools{
+        flex-basis: 213px;
+    }
+    .footer .container .services{
+        flex-basis: 200px;
+    }
+    .footer .container .contact{
+        flex-basis: 197px;
+    }
+    .footer .container>ul.contact>div.oplata {
+        margin-top: 10px;
+    }
+    .footer .container>ul.contact>div.oplata{
+        margin-top: 25px;
+    }
+
+}
+@media all and (max-width:600px){
+    .container{
+        width: 320px;
+    }
+    .header .container .header-bottom div{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .header .container .header-bottom .search{
+        width: 244px;
+        margin-left: 0px;
+        margin: 24px auto;
+    }
+    .header .container .header-bottom .auth-two{
+        margin: 34px auto;
+    }
+    .header .container .header-bottom .auth-two .picture-two span:first-child{
+        left: 35px;
+    }
+    .header .container .header-bottom .auth-two .picture-two span:nth-child(2){
+        left: 137px;
+    }
+    .header .container .header-bottom .auth-two .picture-two span:last-child{
+        left: 237px;
+    }
+    .fotobuy .container .itog ul{
+        display: block;
+    }
+    .fotobuy .container .itog ul li{
+        font-size: 12px;
+        margin: 0px 0px;
+       
+    }
+    .fotobuy .container .itog .wrap .wrap-buy{
+        
+        flex-direction: column;
+    }
+    .fotobuy .container .itog h2{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy img{
+     margin-left: 113px;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy h4{
+        margin-top: 10px ;
+        text-align: center;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy #minus{
+        margin: 10px auto;
+        width: 100px;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy #plus{
+        margin: 10px auto;
+        width: 100px;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy div.price{
+        margin-top: 10px;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy div.price {
+        text-align: center;
+        margin-left: 108px;
+    }
+    .fotobuy .container .itog .wrap .result{
+        width: 320px;
+    }
+    .fotobuy .container .itog .wrap .result button#red{
+        width: 100%;
+        font-size: 33px;
+        margin-left: auto;
+        margin-right:auto ;
+    }
+    .fotobuy .container .itog .wrap .result .dost{
+        margin-left: 10px;
+    }
+    .fotobuy .container .itog .wrap .wrap-buy div i{
+        display: none;
+    }
+    .fotobuy .container .oplata input{
+        width: 100%;
+    }
+    .fotobuy .container .dostavka h2{
+        text-align: center;
+    }
+    .fotobuy .container .dostavka input{
+        width: 100%;
+    }
+    .fotobuy .container .dostavka span{
+        font-size: 12px;
+    }
+    .fotobuy .container .oplata h2{
+        text-align: center;
+    }
+    .fotobuy .container .dannye h2{
+        text-align: center;
+    }
+    .fotobuy .container .dannye span{
+        line-height: 12px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .fotobuy .container .dannye #sub{
+        width: 100%;
+    }
+    .fotobuy .container .dannye input{
+        width: 100%;
+    }
+    .fotobuy .container .dannye #happy+label{
+        font-size: 12px;
+        /* margin-right: 8px; */
+    }
+    .fotobuy .container .dannye #happy:checked+label::before{
+        margin-right: 8px;
+    }
+    .footer .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 510px;
+    }
+    .footer .container .tools{
+        flex-basis: 130px;
+        height: 240px;
+    }
+    
+    .footer .container .services{
+        flex-basis: 170px;
+        height: 200px;
+    }
+    .footer .container .contact{
+        margin-top: -13px;
+    }
+   
+    }
+    .footer .container ul {
+        flex-basis: 93px;
+        padding-left: 3px;
+    }
+    .footer .container ul li:first-child{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .footer .container ul li{
+        margin-bottom: 3px;
+    }
+    .footer .container ul li:first-child{
+        margin-bottom: 10px;
+    }
+    .footer .container>ul.contact li {
+        margin-top: 15px;
+    }
+    .footer .container>ul.contact>div.oplata {
+        margin-top: 10px;
     }
 
     
-        
+
+
+
+
+
 
 
 }

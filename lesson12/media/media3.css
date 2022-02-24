@@ -1,4 +1,4 @@
-@media all and (max-width:1120px){
+@media all and (max-width:1320px){
     .container{
         width: 930px;
     }
@@ -36,6 +36,20 @@
     .specification .container .characterization h3 {
         margin-left: 127px;
     }
+    .footer .container {
+        flex-wrap: wrap;
+        height: 600px;
+    }
+    .footer .container ul{
+        flex-basis: 180px;
+    }
+    .footer .container ul li{
+        margin-bottom: 3px;
+    }
+    .footer .container>ul.contact>div.oplata {
+        margin-top: 13px;
+    }
+
 
 
 
@@ -149,6 +163,16 @@
         flex-wrap: wrap;
         
     }
+    .footer .container {
+        flex-wrap: wrap;
+        height: 662px;
+    }
+    .footer .container .contact{
+        flex-basis: 250px;
+    }
+    .footer .container>ul.contact>div.oplata {
+        margin-top: 10px;
+    }
 
 
 }
@@ -213,6 +237,80 @@
         }
         .request .container #request-wrap .request-card{
             margin-bottom: 10px;
+        }
+        .footer .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            height: 722px;
+        }
+        .footer .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 510px;
+        }
+        .footer .container .tools{
+            flex-basis: 130px;
+            height: 240px;
+        }
+        
+        .footer .container .services{
+            flex-basis: 170px;
+            height: 200px;
+        }
+        .footer .container .contact{
+            margin-top: -13px;
+            flex-basis: 210px;
+        }
+        .footer .container .info {
+            flex-basis: 75px;
+            padding-left: 3px;
+            margin-top: -1pc;
+        }
+        }
+        .footer .container ul {
+            flex-basis: 93px;
+            padding-left: 3px;
+        }
+        .footer .container ul li:first-child{
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .footer .container ul li{
+            margin-bottom: 3px;
+        }
+        .footer .container ul li:first-child{
+            margin-bottom: 10px;
+        }
+        .footer .container>ul.contact li {
+            margin-top: 15px;
+        }
+        .footer .container>ul.contact>div.oplata {
+            margin-top: 10px;
+        }
+    
+        .footer .container .info{
+            flex-basis: 75px;
+            padding-left: 3px;
+        }
+        .footer .container ul li:first-child{
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .footer .container ul li{
+            margin-bottom: 3px;
+        }
+        .footer .container ul li:first-child{
+            margin-bottom: 10px;
+        }
+        .footer .container>ul.contact li {
+            margin-top: 15px;
+        }
+        .footer .container>ul.contact>div.oplata {
+            margin-top: 10px;
         }
 
 

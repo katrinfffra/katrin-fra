@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="font/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="media/media2.css">
-    <title>project2</title>
+    <title>Photomarket</title>
 </head>
 
 <body>
@@ -119,16 +119,15 @@
                     &#9148;
                     <input type="number" value="br2" maxlength="6" placeholder="999999" id="cost">
                 </div>
+
                 <div>
-                    <label for="brend">Бренд</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="brend[]" value="br1" id="brend" checked>
-                    <span>Canon (14)</span> <br>
-                    <input type="checkbox" name="brend[]" value="br2" id="brend">
-                    <span>Nikon (13)</span> <br>
-                    <input type="checkbox" name="brend[]" value="br3" id="brend">
-                    <span>Leica (3)</span>
+                    <input type="checkbox" id="happy" class="custom-checkbox" name="happy" value="yes" checked>
+                    <label for="happy">Canon (14)</label> <br>
+                    <input type="checkbox" id="nikon" class="custom-checkbox" name="nikon" value="yes">
+                    <label for="nikon">Nikon (13)</label> <br>
+                    <input type="checkbox" id="leica" class="custom-checkbox" name="leica" value="br3">
+                    <label for="leica">Leica (3)</label>
+
                 </div>
                 <div>
                     <label for="effect">Число эффективных пикселов</label>
@@ -139,24 +138,29 @@
                     <input type="number" name="num[]" value="br2" maxlength="2" placeholder="53" id="effect">
                 </div>
                 <div>
-                    <label for="matric">Формат матрицы</label>
+                    <label for="">Формат матрицы</label>
                 </div>
                 <div>
-                    <input type="checkbox" name="check[]" value="br1" id="matric">
-                    <span>30х45 мм (2)</span> <br>
-                    <input type="checkbox" name="check[]" value="br2" id="matric">
-                    <span>35 мм (26)</span> <br>
-                    <input type="checkbox" name="check[]" value="br3" id="matric">
-                    <span>44x33 мм (3)</span>
+                    <input type="checkbox" id="matrica" name="check[]" value="br1">
+                    <label for="matrica">30х45 мм (2)</label> <br>
+
+                    <input type="checkbox" id="matricatwo" name="check[]" value="br2">
+                    <label for="matricatwo">35 мм (26)</label> <br>
+
+                    <input type="checkbox" id="matricathree" name="check[]" value="br3">
+                    <label for="matricathree">44x33 мм (3)</label>
+
                 </div>
                 <div>
-                    <label for="objmat">Объектив в комплекте</label>
+                    <label for="">Объектив в комплекте</label>
                 </div>
                 <div>
-                    <input type="radio" name="objmat[]" value="br1" id="objmat">
-                    <span>Есть</span>
-                    <input type="radio" name="objmat[]" value="br2" id="objmat">
-                    <span>Нет</span>
+                    <input type="radio" id="objmatone" name="objmat[]" value="br1" id="objmat">
+                    <label for="objmatone">Есть</label>
+
+                    <input type="radio" id="objmattwo" name="objmat[]" value="br2" checked>
+                    <label for="objmattwo">Нет</label>
+
 
                 </div>
             </div>
@@ -310,17 +314,17 @@
             },
             {
                 imgUrl: "img/camera2.png",
-                price: "4 240 р",
-                sale: "5 400 р",
-                discon: "-10%",
-                title: "Canon EOS 5D Mark IV Body"
+                price: "8 455 р",
+                sale: "8 900 р",
+                discon: "-5%",
+                title: "Зеркальный фотоаппарат Canon EOS 1D X Mark II Body"
             },
             {
                 imgUrl: "img/camera3.png",
-                price: "4 240 р",
+                price: "6 240 р",
                 sale: "5 400 р",
-                discon: "-10%",
-                title: "Canon EOS 5D Mark IV Body"
+                discon: "-5%",
+                title: "Зеркальный фотоаппарат CanonEOS 6D Mark II Body"
             }
         ];
         for (i = 0; i < cam.length; i++) {
@@ -351,9 +355,9 @@
         var can = [
             {
                 imgUrl: "img/cardcamera5.png",
-                price: "9 500 р",
+                price: "1 840 р",
                 sale: "10 000 р",
-                discon: "-5%",
+                discon: "-50%",
                 title: "Зеркальный фотоаппарат Canon EOS 80D Body",
                 reiting: "13"
 
@@ -363,7 +367,7 @@
                 price: "9 500 р",
                 sale: "10 000 р",
                 discon: "-5%",
-                title: "Зеркальный фотоаппарат Canon EOS 80D Body",
+                title: "Зеркальный фотоаппарат Canon EOS-1D X Mark III Body",
                 reiting: "13"
 
             },
@@ -372,7 +376,7 @@
                 price: "9 500 р",
                 sale: "10 000 р",
                 discon: "-5%",
-                title: "Зеркальный фотоаппарат Canon EOS 80D Body",
+                title: "Canon EOS 250D Kit EF-S 18-55mm f/4-5.6 IS STM silver",
                 reiting: "13"
 
             }
@@ -405,26 +409,26 @@
         var canwhit = [
             {
                 imgUrl: "img/canon1.png",
-                price: "9 500 р",
-                sale: "10 000 р",
-                discon: "-5%",
-                title: "Зеркальный фотоаппарат Canon EOS 80D Body",
+                price: "3 230 р",
+                sale: "3 800 р",
+                discon: "-15%",
+                title: "Зеркальный фотоаппарат Canon EOS850D Kit EF-S 18-135mm IS USM",
                 reiting: "13"
             },
             {
                 imgUrl: "img/canon3.png",
-                price: "9 500 р",
-                sale: "10 000 р",
+                price: "955 р",
+                sale: "10 050 р",
                 discon: "-5%",
-                title: "Зеркальный фотоаппарат Canon EOS 80D Body",
+                title: "Зеркальный фотоаппарат Canon EOS2000D Kit 18-55 III",
                 reiting: "13"
             },
             {
                 imgUrl: "img/canonwhite.png",
-                price: "9 500 р",
-                sale: "10 000 р",
-                discon: "-5%",
-                title: "Зеркальный фотоаппарат Canon EOS 80D Body",
+                price: "3 600 р",
+                sale: "4 000 р",
+                discon: "-10%",
+                title: "Canon EOS 250D Kit EF-S 18-55mmf/4-5.6 IS STM white",
                 reiting: "13"
             }
         ];
