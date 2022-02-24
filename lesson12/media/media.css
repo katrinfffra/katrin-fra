@@ -288,7 +288,7 @@
         width: 100%;
     }
     .slider .container .carousel-item:nth-child(2) {
-        background: url(../img/bred.png) no-repeat 85%;
+        background: url(../img/bred.png) no-repeat 100%;
     }
     .assort .container{
         height: 676px;
